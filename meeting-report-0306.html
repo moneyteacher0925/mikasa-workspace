@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>미팅 리포트 — 메리피플 차희연 대표</title>
+<style>
+  @page { size: A4; margin: 20mm 25mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Pretendard', -apple-system, 'Noto Sans KR', sans-serif; color: #1a1a1a; line-height: 1.7; padding: 40px; max-width: 210mm; margin: 0 auto; background: #fff; }
+  
+  .header { border-bottom: 3px solid #1a1a1a; padding-bottom: 20px; margin-bottom: 30px; }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 8px; }
+  .header h1 { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
+  .header .subtitle { font-size: 13px; color: #666; }
+  .badge { display: inline-block; background: #1a1a1a; color: #fff; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 3px; letter-spacing: 0.5px; }
+  
+  .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 30px; margin-bottom: 30px; font-size: 13px; }
+  .meta-item { display: flex; gap: 8px; }
+  .meta-label { font-weight: 700; color: #666; min-width: 50px; }
+  .meta-value { color: #1a1a1a; }
+  
+  .section { margin-bottom: 28px; }
+  .section-title { font-size: 15px; font-weight: 800; color: #1a1a1a; margin-bottom: 12px; padding-left: 12px; border-left: 4px solid #1a1a1a; }
+  
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 8px; }
+  th { background: #f5f5f5; font-weight: 700; text-align: left; padding: 10px 14px; border-bottom: 2px solid #ddd; }
+  td { padding: 10px 14px; border-bottom: 1px solid #eee; }
+  
+  .highlight-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 20px; margin-bottom: 8px; }
+  .ratio { display: flex; align-items: center; gap: 12px; margin: 12px 0; }
+  .ratio-bar { flex: 1; height: 32px; border-radius: 6px; overflow: hidden; display: flex; }
+  .ratio-a { background: #1a1a1a; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
+  .ratio-b { background: #d1d5db; color: #1a1a1a; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
+  
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 0; margin: 16px 0; }
+  .flow-step { background: #fff; border: 2px solid #1a1a1a; border-radius: 8px; padding: 10px 24px; font-size: 13px; font-weight: 600; text-align: center; width: 80%; }
+  .flow-arrow { font-size: 18px; color: #999; margin: 2px 0; }
+  .flow-step.accent { background: #1a1a1a; color: #fff; }
+  
+  .benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+  .benefit-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 14px; }
+  .benefit-num { font-size: 20px; font-weight: 800; color: #1a1a1a; }
+  .benefit-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+  .benefit-desc { font-size: 12px; color: #666; }
+  
+  .win-win { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+  .win-card { border-radius: 8px; padding: 16px; }
+  .win-card.left { background: #1a1a1a; color: #fff; }
+  .win-card.right { background: #f5f5f5; color: #1a1a1a; }
+  .win-card h4 { font-size: 13px; margin-bottom: 10px; opacity: 0.8; }
+  .win-card ul { list-style: none; font-size: 12px; }
+  .win-card ul li { padding: 3px 0; }
+  .win-card.left ul li::before { content: "✦ "; }
+  .win-card.right ul li::before { content: "✦ "; }
+  
+  .todo-list { list-style: none; font-size: 13px; }
+  .todo-list li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 8px; }
+  .todo-check { width: 16px; height: 16px; border: 2px solid #ccc; border-radius: 3px; flex-shrink: 0; }
+  
+  .footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid #eee; font-size: 11px; color: #999; text-align: center; }
+
+  @media print {
+    body { padding: 0; }
+    .section { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <h1>미팅 리포트</h1>
+    <span class="badge">CONFIDENTIAL</span>
+  </div>
+  <div class="subtitle">메리피플 차희연 대표 × 플로우머스 — 커플매니저 강의 사업 협력 미팅</div>
+</div>
+
+<div class="meta-grid">
+  <div class="meta-item"><span class="meta-label">일시</span><span class="meta-value">2026. 03. 06 (금)</span></div>
+  <div class="meta-item"><span class="meta-label">작성</span><span class="meta-value">플로우머스</span></div>
+  <div class="meta-item"><span class="meta-label">참석</span><span class="meta-value">에렌, 오맷돌 대표, 차희연 대표</span></div>
+  <div class="meta-item"><span class="meta-label">후속</span><span class="meta-value">2026. 03. 11 (수) 강남</span></div>
+</div>
+
+<div class="section">
+  <div class="section-title">역할 분담</div>
+  <table>
+    <tr><th style="width:30%;">구분</th><th>플로우머스</th><th>차희연 대표 (메리피플)</th></tr>
+    <tr><td style="font-weight:700;">핵심 역할</td><td>DB 수집, 마케팅, 강의 런칭</td><td>강사 (커플매니저 교육)</td></tr>
+    <tr><td style="font-weight:700;">광고비</td><td>전액 부담</td><td>—</td></tr>
+    <tr><td style="font-weight:700;">운영</td><td>시스템 구축, 수강생 관리</td><td>강의 콘텐츠 제작</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <div class="section-title">수익 배분</div>
+  <div class="highlight-box">
+    <div class="ratio">
+      <div class="ratio-bar">
+        <div class="ratio-a" style="width:60%;">플로우머스 60%</div>
+        <div class="ratio-b" style="width:40%;">차희연 대표 40%</div>
+      </div>
+    </div>
+    <div style="font-size:12px; color:#666; margin-top:4px;">※ 광고비 플로우머스 부담 조건 포함</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">강의 개요</div>
+  <table>
+    <tr><th style="width:30%;">항목</th><th>내용</th></tr>
+    <tr><td style="font-weight:700;">주제</td><td>커플매니저 부업 — "부업으로 수익 창출" 컨셉</td></tr>
+    <tr><td style="font-weight:700;">타겟</td><td>여성, 육아맘(애기맘)</td></tr>
+    <tr><td style="font-weight:700;">강사</td><td>차희연 대표 (메리피플 대표, 현직 결정사 운영)</td></tr>
+    <tr><td style="font-weight:700;">마케팅</td><td>플로우머스 전담 (메타, 당근, 네이버 등)</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <div class="section-title">핵심 전략 — 강의 → 인력 확보 파이프라인</div>
+  <div class="flow">
+    <div class="flow-step">광고 / 마케팅으로 DB 수집</div>
+    <div class="flow-arrow">▼</div>
+    <div class="flow-step">강의 수강생 모집 → 매출 발생</div>
+    <div class="flow-arrow">▼</div>
+    <div class="flow-step">차희연 대표가 커플매니저 교육</div>
+    <div class="flow-arrow">▼</div>
+    <div class="flow-step accent">수료 수강생 → 플로우머스 프리랜서 계약</div>
+    <div class="flow-arrow">▼</div>
+    <div class="flow-step accent">결정사 내부 매니저로 활용</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">이 구조의 장점</div>
+  <div class="benefits">
+    <div class="benefit-card">
+      <div class="benefit-num">01</div>
+      <div class="benefit-title">강의 매출</div>
+      <div class="benefit-desc">강의 판매 자체로 수익 발생. 광고비 회수 가능.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-num">02</div>
+      <div class="benefit-title">인력 확보</div>
+      <div class="benefit-desc">교육된 커플매니저를 채용비용 0으로 확보.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-num">03</div>
+      <div class="benefit-title">스케일</div>
+      <div class="benefit-desc">강의 반복할수록 매니저 인력풀 자동 확대.</div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-num">04</div>
+      <div class="benefit-title">낮은 리스크</div>
+      <div class="benefit-desc">광고비만 투자. 강사 고정비 없이 성과 배분.</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Win-Win 구조</div>
+  <div class="win-win">
+    <div class="win-card left">
+      <h4>차희연 대표가 얻는 것</h4>
+      <ul>
+        <li>강사 / 크리에이터 포지셔닝</li>
+        <li>마케팅 + 광고 전액 지원</li>
+        <li>개인 브랜딩 기회</li>
+        <li>강의만 하면 되는 구조</li>
+      </ul>
+    </div>
+    <div class="win-card right">
+      <h4>플로우머스가 얻는 것</h4>
+      <ul>
+        <li>결정사 가입 DB 확보</li>
+        <li>교육된 매니저 인력</li>
+        <li>강의 매출 (수익 60%)</li>
+        <li>결정사 운영 시스템 구축</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">인사이트</div>
+  <div class="highlight-box" style="font-size:13px;">
+    <p>차희연 대표는 결정사 시장 자체에는 부정적 시각을 가지고 있으나, <strong>강사/크리에이터</strong>로서의 성장에 높은 관심. 플로우머스는 마케팅 역량으로 트래픽과 DB를 확보할 수 있으므로, 서로 원하는 것이 다른 <strong>상호보완적 구조</strong>.</p>
+    <p style="margin-top:8px;">결정사 시장의 부정적 인식은 기존 업체들의 마케팅 부재에서 기인한 것으로, 마케팅 역량이 핵심 경쟁력이 되는 시장.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Next Steps</div>
+  <ul class="todo-list">
+    <li><span class="todo-check"></span>차희연 대표 협력 조건 서면 계약 (6:4, 광고비 부담)</li>
+    <li><span class="todo-check"></span>강의 커리큘럼 기획 (차희연 대표 주도)</li>
+    <li><span class="todo-check"></span>랜딩페이지 / 모집 페이지 제작</li>
+    <li><span class="todo-check"></span>광고 채널 선정 + 예산 책정</li>
+    <li><span class="todo-check"></span>03/11 (수) 후속 미팅 — 제안서 전달</li>
+  </ul>
+</div>
+
+<div class="footer">
+  플로우머스 — CONFIDENTIAL · 2026. 03. 06
+</div>
+
+</body>
+</html>

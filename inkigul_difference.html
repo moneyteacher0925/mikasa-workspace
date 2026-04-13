@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f1117; padding: 24px; width: 800px; font-family: 'Apple SD Gothic Neo', sans-serif; }
+h1 { color: #fff; font-size: 22px; text-align: center; margin-bottom: 4px; }
+.sub { color: #666; font-size: 12px; text-align: center; margin-bottom: 28px; }
+.section { background: #1a1d27; border-radius: 16px; padding: 24px; margin-bottom: 16px; border: 1px solid #2a2d37; }
+h2 { color: #fff; font-size: 16px; margin-bottom: 16px; }
+.type-card { background: #22252f; border-radius: 12px; padding: 20px; margin-bottom: 12px; border-left: 4px solid; }
+.type1 { border-left-color: #f97316; }
+.type2 { border-left-color: #a78bfa; }
+.type3 { border-left-color: #4ade80; }
+.type-title { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+.t1 { color: #f97316; }
+.t2 { color: #a78bfa; }
+.t3 { color: #4ade80; }
+.type-desc { color: #aaa; font-size: 13px; line-height: 1.7; }
+.type-example { color: #666; font-size: 12px; margin-top: 8px; font-style: italic; }
+.vs-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.vs-table th { background: #22252f; color: #888; font-size: 11px; padding: 10px 8px; text-align: center; letter-spacing: 0.5px; }
+.vs-table td { padding: 10px 8px; border-bottom: 1px solid #22252f; font-size: 12px; color: #ccc; text-align: center; }
+.vs-table .label { text-align: left; color: #aaa; font-weight: 600; }
+.highlight { background: #1a3a2a; color: #4ade80; padding: 2px 6px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.warning { background: #3a2a1a; color: #f97316; padding: 2px 6px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.neutral { background: #2a2a3a; color: #a78bfa; padding: 2px 6px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.summary { background: #1a2a3a; border-radius: 12px; padding: 20px; margin-top: 16px; }
+.summary h3 { color: #60a5fa; font-size: 14px; margin-bottom: 10px; }
+.summary p { color: #ccc; font-size: 13px; line-height: 1.8; }
+.key { color: #4ade80; font-weight: 700; }
+.note { color: #555; font-size: 10px; text-align: center; margin-top: 16px; }
+</style>
+</head>
+<body>
+
+<h1>네이버 인기글 3가지 종류 차이점</h1>
+<p class="sub">스마트블록 인기글 vs 주제명 인기글 vs 일반 인기글</p>
+
+<div class="section">
+<h2>네이버 인기글은 3종류가 있다</h2>
+
+<div class="type-card type1">
+  <div class="type-title t1">1. 스마트블록 인기주제 내 [검색어 + 인기글]</div>
+  <div class="type-desc">
+    - 스마트블록 "인기주제" 팝업 안에 있는 인기글<br>
+    - 팝업창으로 열림, 추가 탐색 불가<br>
+    - 에어서치 AI 기반 개인화 로직 적용<br>
+    - VIEW 로직과 비슷하지만 <b>다른 서버</b>에서 운영
+  </div>
+  <div class="type-example">예: '결혼정보회사' 인기주제 클릭 > '결혼정보회사' 인기글</div>
+</div>
+
+<div class="type-card type2">
+  <div class="type-title t2">2. [주제명 + 인기글]</div>
+  <div class="type-desc">
+    - 통합검색 결과에 바로 노출되는 블록<br>
+    - 네이버가 자동으로 주제 분류 (32개 대주제)<br>
+    - VIEW 영역이 여기로 흡수 통합됨<br>
+    - 하지만 실제로는 <b>VIEW 로직과 다른 순위</b> 보임<br>
+    - 별도의 스마트블록 서버에서 운영
+  </div>
+  <div class="type-example">예: "'결혼정보회사' 인기글", "결혼정보 회사가격" 등</div>
+</div>
+
+<div class="type-card type3">
+  <div class="type-title t3">3. 단순 [인기글] ← 이게 진짜 VIEW</div>
+  <div class="type-desc">
+    - 주제명 없이 그냥 "인기글"로만 표시<br>
+    - <b>이것이 기존 네이버 VIEW 로직 그대로</b><br>
+    - C-rank (창작자 신뢰도) + DIA (문서 품질) 알고리즘 적용<br>
+    - 최적화 블로그가 상위 노출되는 진짜 VIEW<br>
+    - 특수문자 포함 검색해도 순위 동일 (같은 서버)
+  </div>
+  <div class="type-example">예: 주제 분류가 안 되는 키워드에서 나타남</div>
+</div>
+</div>
+
+<div class="section">
+<h2>3가지 인기글 비교표</h2>
+<table class="vs-table">
+  <tr>
+    <th></th>
+    <th>스마트블록<br>[검색어+인기글]</th>
+    <th>[주제명+인기글]</th>
+    <th>단순 [인기글]</th>
+  </tr>
+  <tr>
+    <td class="label">로직</td>
+    <td><span class="warning">스마트블록 자체</span></td>
+    <td><span class="neutral">VIEW 비슷 (다름)</span></td>
+    <td><span class="highlight">진짜 VIEW</span></td>
+  </tr>
+  <tr>
+    <td class="label">알고리즘</td>
+    <td>에어서치 AI</td>
+    <td>스마트블록 서버</td>
+    <td>C-rank + DIA</td>
+  </tr>
+  <tr>
+    <td class="label">노출 위치</td>
+    <td>인기주제 팝업 내부</td>
+    <td>통합검색 본문</td>
+    <td>통합검색 본문</td>
+  </tr>
+  <tr>
+    <td class="label">주제명</td>
+    <td>검색어 그대로</td>
+    <td>네이버가 분류</td>
+    <td>없음</td>
+  </tr>
+  <tr>
+    <td class="label">최적화 블로그<br>유리한가</td>
+    <td>불확실</td>
+    <td>일부</td>
+    <td><span class="highlight">매우 유리</span></td>
+  </tr>
+  <tr>
+    <td class="label">상위노출<br>난이도</td>
+    <td><span class="warning">어려움</span></td>
+    <td><span class="neutral">중간</span></td>
+    <td><span class="highlight">실력대로</span></td>
+  </tr>
+</table>
+</div>
+
+<div class="section">
+<h2>아까 찾은 키워드 재분류</h2>
+<table class="vs-table">
+  <tr>
+    <th>키워드</th>
+    <th>인기글 종류</th>
+    <th>타입</th>
+  </tr>
+  <tr>
+    <td class="label">결혼정보회사</td>
+    <td>'결혼정보회사' 인기글</td>
+    <td><span class="neutral">주제명+인기글 (스마트블록)</span></td>
+  </tr>
+  <tr>
+    <td class="label">결혼정보회사 추천</td>
+    <td>'결혼정보회사' 인기글</td>
+    <td><span class="neutral">주제명+인기글 (스마트블록)</span></td>
+  </tr>
+  <tr>
+    <td class="label">결혼정보회사 가격</td>
+    <td>결혼정보 회사가격</td>
+    <td><span class="neutral">주제명+인기글 (스마트블록)</span></td>
+  </tr>
+  <tr>
+    <td class="label">결혼정보 회사가격</td>
+    <td>결혼정보 회사가격</td>
+    <td><span class="neutral">주제명+인기글 (스마트블록)</span></td>
+  </tr>
+  <tr>
+    <td class="label">결혼상담소</td>
+    <td>확인 필요</td>
+    <td><span class="neutral">확인 필요</span></td>
+  </tr>
+</table>
+</div>
+
+<div class="summary">
+<h3>핵심 결론</h3>
+<p>
+에렌이 말한 <span class="key">"일반 인기글"</span>은 주제명 없이 그냥 [인기글]로만 표시되는 것으로,<br>
+이것이 <span class="key">기존 VIEW 로직</span>이 그대로 적용되는 영역이야.<br><br>
+
+아까 내가 찾은 5개 키워드는 전부 <span class="key">[주제명+인기글] = 스마트블록</span>이었어.<br>
+스마트블록 인기글은 VIEW 로직과 비슷하지만 별도 서버에서 돌아가고 순위도 다르게 나와.<br><br>
+
+결혼정보회사/결정사 키워드 중 <span class="key">단순 [인기글]</span>이 나오는 키워드가 있는지<br>
+추가로 확인이 필요해 — 원하면 바로 조사해줄게.
+</p>
+</div>
+
+<p class="note">출처: TBWA SEO 블로그 / 러너가이 블로그 (genwolai) | 2026.02.12</p>
+
+</body>
+</html>

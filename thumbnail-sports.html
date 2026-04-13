@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 500px; height: 500px; }
+.thumb {
+  width: 500px; height: 500px;
+  background: #1a1a1a;
+  position: relative;
+  overflow: hidden;
+  font-family: -apple-system, 'Noto Sans KR', sans-serif;
+}
+.product-left {
+  position: absolute;
+  left: 20px;
+  top: 80px;
+  width: 200px;
+  height: 280px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.5));
+}
+.product-right {
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  width: 200px;
+  height: 280px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.5));
+}
+.plus {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-50%);
+  color: #E53935;
+  font-size: 36px;
+  font-weight: 900;
+  z-index: 10;
+}
+.top-badge {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #E53935;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 6px 20px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+.title {
+  position: absolute;
+  bottom: 70px;
+  left: 0; right: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+.subtitle {
+  position: absolute;
+  bottom: 42px;
+  left: 0; right: 0;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  font-size: 13px;
+  font-weight: 500;
+}
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  height: 30px;
+  background: #E53935;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.divider {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 300px;
+  background: rgba(255,255,255,0.1);
+}
+</style>
+</head>
+<body>
+<div class="thumb">
+  <div class="top-badge">SPORTS SET</div>
+  <div class="divider"></div>
+  <img class="product-left" src="file_209---352ebd3d-389f-463d-b5f0-d7794b6fc1ae.jpg" alt="팔토시">
+  <span class="plus">+</span>
+  <img class="product-right" src="file_210---99b70010-b7a4-4d59-b4f0-448c9aa0b286.jpg" alt="쿨링패치">
+  <div class="title">운동선수 퍼포먼스 세트</div>
+  <div class="subtitle">압박 팔토시 + 쿨링 패치</div>
+  <div class="bottom-bar">혼합구성 SPECIAL PACKAGE</div>
+</div>
+</body>
+</html>

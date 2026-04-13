@@ -1,0 +1,13 @@
+{
+  "name": "threads-bot",
+  "version": "1.0.0",
+  "description": "Threads 자동 글 업로드 봇",
+  "scripts": {
+    "login": "node login-setup.js",
+    "post": "node post.js",
+    "batch": "node batch-post.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}

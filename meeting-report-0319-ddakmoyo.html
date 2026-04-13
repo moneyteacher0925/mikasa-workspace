@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8">
+<style>
+@page{size:A4;margin:20mm}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:10pt;line-height:1.65;color:#222;padding:20mm}
+h1{font-size:16pt;text-align:center;margin-bottom:2px}
+.subtitle{text-align:center;font-size:9pt;color:#777;margin-bottom:20px}
+h2{font-size:11.5pt;background:#1a1a2e;color:#fff;padding:5px 12px;margin:16px 0 8px;border-radius:4px}
+h3{font-size:10.5pt;margin:12px 0 6px;color:#1a1a2e}
+table{width:100%;border-collapse:collapse;margin-bottom:12px;font-size:9.5pt}
+th,td{border:1px solid #ccc;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#f4f4f8;font-weight:600;width:25%}
+.step{border:1px solid #ddd;border-radius:8px;padding:14px;margin:10px 0;background:#fafafa}
+.step-num{display:inline-block;width:28px;height:28px;background:#1a1a2e;color:#fff;border-radius:50%;text-align:center;line-height:28px;font-weight:700;font-size:10pt;margin-right:8px}
+.step-title{font-size:11pt;font-weight:700;vertical-align:middle}
+.step p{margin:6px 0 0 36px;font-size:9.5pt;color:#444}
+.highlight{background:#fff9c4;padding:8px 12px;border-radius:4px;margin:10px 0;font-size:9.5pt}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:8pt;font-weight:700;color:#fff}
+.b-mattol{background:#2980b9}
+.b-eren{background:#e74c3c}
+.b-dev{background:#27ae60}
+.b-both{background:#7d3c98}
+.note{font-size:8.5pt;color:#888;margin-top:3px}
+ul{margin:4px 0 4px 36px;font-size:9.5pt}
+li{margin:2px 0}
+</style></head><body>
+
+<h1>딱모여 웹사이트 개발 미팅 리포트</h1>
+<p class="subtitle">2026.03.19 (목) 17:00 | 구글밋 | 천주원 개발자 × 에렌 대표</p>
+
+<h2>미팅 개요</h2>
+<table>
+<tr><th>안건</th><td>딱모여(플로우머스) 웹사이트 개발 방향 논의</td></tr>
+<tr><th>참석</th><td>천주원 (개발자) / 권에렌 (플로우머스 공동대표)</td></tr>
+<tr><th>공유 대상</th><td>오맷돌 대표님 (플로우머스 공동대표)</td></tr>
+</table>
+
+<h2>핵심 결론</h2>
+<div class="highlight">
+처음부터 자체 개발하지 않고, <strong>기존 플랫폼으로 검증 → 기존 솔루션 활용 → 자체 개발</strong> 3단계로 진행.
+어드민(관리자 페이지)을 처음부터 만들면 비용·시간이 과다하므로, 기존 어드민이 있는 솔루션을 먼저 활용하는 것을 권장.
+</div>
+
+<h2>개발 로드맵 (3단계)</h2>
+
+<div class="step">
+<span class="step-num">1</span><span class="step-title">기존 플랫폼에서 모임 테스트</span>
+<p><strong>문토 / 밋업</strong>에 호스트로 직접 들어가서 모임 운영</p>
+<ul>
+<li>어떤 카테고리가 반응 좋은지 데이터 확보</li>
+<li>노쇼율, 재참여율, 참가자 피드백 수집</li>
+<li>모임 운영 프로세스 정립</li>
+<li>비용: 거의 0원</li>
+</ul>
+<p>
+<span class="badge b-mattol">맷돌</span> 호스트 운영 + 현장 영상/사진 촬영<br>
+<span class="badge b-eren">에렌</span> 데이터 분석 + 광고 테스트
+</p>
+</div>
+
+<div class="step">
+<span class="step-num">2</span><span class="step-title">기존 솔루션(어드민) 활용</span>
+<p><strong>라이브클래스</strong> 등 기존 어드민이 갖춰진 플랫폼 활용</p>
+<ul>
+<li>회원관리 / 결제 / 일정관리 어드민이 이미 있음</li>
+<li>커스터마이징만 하면 빠르고 저렴</li>
+<li>모임 운영에 필요한 핵심 기능 커버 가능</li>
+<li>1단계에서 검증된 데이터 기반으로 필요 기능 선별</li>
+</ul>
+<p>
+<span class="badge b-dev">천주원</span> 솔루션 세팅 + 커스터마이징<br>
+<span class="badge b-eren">에렌</span> 요구사항 정리 + 운영
+</p>
+</div>
+
+<div class="step">
+<span class="step-num">3</span><span class="step-title">자체 웹사이트 개발</span>
+<p>트래픽과 수익이 검증된 후 자체 플랫폼 개발</p>
+<ul>
+<li><span class="badge b-mattol">맷돌</span> 바이브코딩으로 프론트엔드 와꾸 잡기 (모든 페이지 + 어드민)</li>
+<li><span class="badge b-dev">천주원</span> 프론트 기반으로 백엔드 개발 → 비용 절감</li>
+<li>1~2단계에서 파악한 "진짜 필요한 기능"만 개발</li>
+<li>불필요한 기능 제거 → 시간·비용 최소화</li>
+</ul>
+</div>
+
+<h2>이 순서가 좋은 이유</h2>
+<table>
+<tr><th>항목</th><th>처음부터 자체개발</th><th>3단계 진행 (권장)</th></tr>
+<tr><td>개발 기간</td><td>3~6개월+</td><td>1단계 즉시 시작</td></tr>
+<tr><td>초기 비용</td><td>수천만원</td><td>거의 0원</td></tr>
+<tr><td>리스크</td><td>만들고 피벗하면 전부 폐기</td><td>검증 후 개발 → 낭비 없음</td></tr>
+<tr><td>어드민</td><td>직접 개발 (가장 복잡)</td><td>기존 솔루션 활용 → 나중에 자체 개발</td></tr>
+<tr><td>사업 검증</td><td>개발 끝나야 시작</td><td>개발 전에 이미 검증 완료</td></tr>
+</table>
+
+<h2>맷돌 대표님 액션</h2>
+<table>
+<tr><th style="width:25px">#</th><th>할 일</th><th style="width:70px">시기</th></tr>
+<tr><td>1</td><td>문토 / 밋업 호스트 등록 → 첫 모임 테스트 운영</td><td>이번주</td></tr>
+<tr><td>2</td><td>모임 현장 레퍼런스 영상/사진 촬영 (광고소재 + 웹사이트용)</td><td>모임 시</td></tr>
+<tr><td>3</td><td>자체 웹사이트 프론트 와꾸 설계 시작 (바이브코딩)</td><td>2단계 이후</td></tr>
+</table>
+
+<p style="margin-top:24px;font-size:8.5pt;color:#999;text-align:center">
+작성: 미카사 | 2026.03.19 | 천주원 개발자 미팅 기반
+</p>
+
+</body></html>

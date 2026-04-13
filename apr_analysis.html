@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f1117; padding: 24px; width: 800px; font-family: 'Apple SD Gothic Neo', sans-serif; }
+h1 { color: #fff; font-size: 22px; text-align: center; margin-bottom: 4px; }
+.sub { color: #666; font-size: 12px; text-align: center; margin-bottom: 28px; }
+.section { background: #1a1d27; border-radius: 16px; padding: 24px; margin-bottom: 16px; border: 1px solid #2a2d37; }
+h2 { color: #fff; font-size: 16px; margin-bottom: 16px; }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+.stat { background: #22252f; border-radius: 12px; padding: 16px; text-align: center; }
+.stat-label { color: #888; font-size: 11px; }
+.stat-value { color: #fff; font-size: 22px; font-weight: 700; margin-top: 4px; }
+.stat-sub { color: #4ade80; font-size: 11px; margin-top: 2px; }
+.bar-row { display: flex; align-items: center; margin-bottom: 10px; }
+.bar-label { color: #ccc; font-size: 12px; width: 100px; flex-shrink: 0; }
+.bar-wrap { flex: 1; height: 32px; background: #22252f; border-radius: 6px; overflow: hidden; position: relative; }
+.bar-fill { height: 100%; border-radius: 6px; display: flex; align-items: center; padding-left: 10px; }
+.bar-text { color: #fff; font-size: 12px; font-weight: 600; }
+.bar-amt { color: rgba(255,255,255,0.6); font-size: 10px; margin-left: 6px; }
+.pie-visual { display: flex; justify-content: center; gap: 24px; margin: 16px 0; flex-wrap: wrap; }
+.pie-item { text-align: center; }
+.pie-circle { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 8px; }
+.pie-pct { color: #fff; font-size: 18px; font-weight: 700; }
+.pie-label { color: #aaa; font-size: 11px; }
+.pie-amt { color: #666; font-size: 10px; }
+.mkt-card { background: #22252f; border-radius: 10px; padding: 16px; margin-bottom: 10px; border-left: 4px solid; }
+.m1 { border-left-color: #f43f5e; }
+.m2 { border-left-color: #8b5cf6; }
+.m3 { border-left-color: #06b6d4; }
+.m4 { border-left-color: #f59e0b; }
+.m5 { border-left-color: #4ade80; }
+.mkt-title { color: #fff; font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+.mkt-desc { color: #aaa; font-size: 12px; line-height: 1.6; }
+.key { color: #4ade80; font-weight: 700; }
+.timeline { position: relative; padding-left: 20px; }
+.timeline::before { content: ''; position: absolute; left: 6px; top: 0; bottom: 0; width: 2px; background: #2a2d37; }
+.tl-item { position: relative; margin-bottom: 14px; padding-left: 16px; }
+.tl-item::before { content: ''; position: absolute; left: -17px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: #6366f1; }
+.tl-year { color: #6366f1; font-size: 12px; font-weight: 700; }
+.tl-text { color: #ccc; font-size: 12px; margin-top: 2px; }
+.note { color: #555; font-size: 10px; text-align: center; margin-top: 16px; }
+</style>
+</head>
+<body>
+
+<h1>에이피알(APR) 기업 분석</h1>
+<p class="sub">메디큐브 / AGE-R | 2025년 연간 실적 기준 | 진격의 마케팅</p>
+
+<div class="stats">
+  <div class="stat"><div class="stat-label">2025 연간 매출</div><div class="stat-value">1조 5,273억</div><div class="stat-sub">전년 대비 +111%</div></div>
+  <div class="stat"><div class="stat-label">영업이익</div><div class="stat-value">3,654억</div><div class="stat-sub">전년 대비 +198%</div></div>
+  <div class="stat"><div class="stat-label">영업이익률</div><div class="stat-value">24%</div><div class="stat-sub">견조한 수익성</div></div>
+  <div class="stat"><div class="stat-label">해외매출 비중</div><div class="stat-value">80%</div><div class="stat-sub">전년 55% → 80%</div></div>
+</div>
+
+<div class="section">
+<h2>나라별 매출 비중 (2025)</h2>
+
+<div class="bar-row">
+  <div class="bar-label">미국</div>
+  <div class="bar-wrap"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,#6366f1,#818cf8)"><span class="bar-text">~39%</span><span class="bar-amt">~5,960억 (Q3 기준 분기 1,500억+)</span></div></div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">일본</div>
+  <div class="bar-wrap"><div class="bar-fill" style="width:50%;background:linear-gradient(90deg,#f43f5e,#fb7185)"><span class="bar-text">~20%</span><span class="bar-amt">~3,050억 (큐텐 뷰티 1위)</span></div></div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">한국</div>
+  <div class="bar-wrap"><div class="bar-fill" style="width:50%;background:linear-gradient(90deg,#22c55e,#4ade80)"><span class="bar-text">~20%</span><span class="bar-amt">~3,015억 (국내)</span></div></div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">유럽/기타</div>
+  <div class="bar-wrap"><div class="bar-fill" style="width:53%;background:linear-gradient(90deg,#f59e0b,#fbbf24)"><span class="bar-text">~21%</span><span class="bar-amt">~3,248억 (전년 대비 4배 성장)</span></div></div>
+</div>
+
+<div class="pie-visual">
+  <div class="pie-item"><div class="pie-circle" style="background:linear-gradient(135deg,#6366f1,#818cf8)"><div class="pie-pct">39%</div></div><div class="pie-label">미국</div></div>
+  <div class="pie-item"><div class="pie-circle" style="background:linear-gradient(135deg,#f43f5e,#fb7185)"><div class="pie-pct">20%</div></div><div class="pie-label">일본</div></div>
+  <div class="pie-item"><div class="pie-circle" style="background:linear-gradient(135deg,#22c55e,#4ade80)"><div class="pie-pct">20%</div></div><div class="pie-label">한국</div></div>
+  <div class="pie-item"><div class="pie-circle" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)"><div class="pie-pct">21%</div></div><div class="pie-label">유럽/기타</div></div>
+</div>
+</div>
+
+<div class="section">
+<h2>상품 카테고리별 매출 비중 (2025)</h2>
+
+<div class="bar-row">
+  <div class="bar-label">화장품</div>
+  <div class="bar-wrap"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,#ec4899,#f472b6)"><span class="bar-text">73% — 약 1조 1,100억</span></div></div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">뷰티 디바이스</div>
+  <div class="bar-wrap"><div class="bar-fill" style="width:37%;background:linear-gradient(90deg,#8b5cf6,#a78bfa)"><span class="bar-text">27% — 약 4,070억</span></div></div>
+</div>
+
+<div class="pie-visual" style="margin-top:16px">
+  <div class="pie-item"><div class="pie-circle" style="background:linear-gradient(135deg,#ec4899,#f472b6);width:100px;height:100px"><div class="pie-pct">73%</div></div><div class="pie-label">화장품 (메디큐브)</div><div class="pie-amt">제로모공패드, PDRN라인 등</div></div>
+  <div class="pie-item"><div class="pie-circle" style="background:linear-gradient(135deg,#8b5cf6,#a78bfa);width:100px;height:100px"><div class="pie-pct">27%</div></div><div class="pie-label">뷰티 디바이스 (AGE-R)</div><div class="pie-amt">누적 600만대, 울타 입점</div></div>
+</div>
+</div>
+
+<div class="section">
+<h2>에이피알 광고/마케팅 전략</h2>
+
+<div class="mkt-card m1">
+  <div class="mkt-title">1. 틱톡 어필리에이트 (핵심 무기)</div>
+  <div class="mkt-desc">틱톡 크리에이터가 제품 리뷰 → 틱톡샵에서 바로 구매 연결<br>초기부터 틱톡 어필리에이트에 올인, <span class="key">구매 전환 직전 노출</span>에 집중<br>할인 의존 없이 매출+이익 동시 확보하는 구조</div>
+</div>
+<div class="mkt-card m2">
+  <div class="mkt-title">2. SNS 인플루언서 "인해전술"</div>
+  <div class="mkt-desc">10~30대 여성 타겟 → TV 대신 <span class="key">SNS에 마케팅비 집중</span><br>대형 인플루언서 + 마이크로 인플루언서 동시 활용<br>광고선전비 매출 대비 17% — 전부 디지털에 투입</div>
+</div>
+<div class="mkt-card m3">
+  <div class="mkt-title">3. 아마존 내부 광고 (미국)</div>
+  <div class="mkt-desc">아마존 스폰서드 광고 + 프라임데이 집중 공략<br><span class="key">실구매 직전 노출</span> 광고에 집중하는 퍼포먼스 전략<br>2025 Q3 미국만 분기 1,500억 돌파</div>
+</div>
+<div class="mkt-card m4">
+  <div class="mkt-title">4. D2C (자사몰 직접 판매)</div>
+  <div class="mkt-desc">자체 웹사이트에서 직접 판매 → 중간 마진 제거<br>고객 데이터 직접 수집 → 데이터 기반 마케팅 내재화<br>리타게팅, 개인화 추천 등 정교한 CRM</div>
+</div>
+<div class="mkt-card m5">
+  <div class="mkt-title">5. 오프라인 확장 (최근)</div>
+  <div class="mkt-desc">미국 울타(ULTA) 뷰티 입점 → 오프라인 채널 확대<br>성수동 메디큐브 플래그십 → 오픈 1달 만에 1.5만명 방문<br>온라인→오프라인 확장으로 브랜드 신뢰도 강화</div>
+</div>
+</div>
+
+<div class="section">
+<h2>에이피알 성장 타임라인</h2>
+<div class="timeline">
+  <div class="tl-item"><div class="tl-year">2014</div><div class="tl-text">에이피알 창립 (김병훈 대표)</div></div>
+  <div class="tl-item"><div class="tl-year">2018</div><div class="tl-text">메디큐브 브랜드 본격 런칭</div></div>
+  <div class="tl-item"><div class="tl-year">2022</div><div class="tl-text">AGE-R 뷰티 디바이스 출시 → 글로벌 히트</div></div>
+  <div class="tl-item"><div class="tl-year">2024</div><div class="tl-text">연매출 7,237억 / 해외 비중 55% / 코스피 상장</div></div>
+  <div class="tl-item"><div class="tl-year">2025</div><div class="tl-text">연매출 1조 5,273억 (+111%) / 해외 80% / 시총 10조</div></div>
+</div>
+</div>
+
+<div class="section" style="background:#1a2a3a;border-color:#2a3a4a">
+<h2 style="color:#60a5fa">핵심 인사이트</h2>
+<div class="mkt-desc" style="color:#ccc;line-height:1.8">
+<span class="key">한국 기업이 미국식 마케팅으로 성공한 케이스.</span><br><br>
+- TV 광고 X → <span class="key">틱톡 + 인플루언서</span>에 올인<br>
+- 네이버 블로그 마케팅 X → <span class="key">아마존 내부 광고 + 틱톡샵</span><br>
+- 브랜딩보다 <span class="key">구매 전환 직전 노출</span>에 집중<br>
+- 할인으로 매출 뽑지 않고 <span class="key">콘텐츠로 수요 창출</span><br>
+- 결과: 해외 매출 80%, 영업이익률 24%<br><br>
+에렌이 물어본 "한국 vs 미국 마케팅 차이" — 에이피알은<br>
+한국 시장은 한국식으로, 해외는 미국식으로 쓰는 <span class="key">하이브리드 전략</span>
+</div>
+</div>
+
+<p class="note">출처: 에이피알 공시, FETV, 비즈니스포스트, 글로벌에픽 | 2025년 연간 잠정실적 기준 | 일부 수치는 추정</p>
+
+</body>
+</html>

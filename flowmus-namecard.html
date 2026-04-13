@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body { margin: 0; padding: 40px; background: #e8e8e8; display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.container { position: relative; width: 900px; height: 560px; }
+
+/* Back card (top) */
+.card-back {
+  position: absolute; top: 0; right: 20px;
+  width: 420px; height: 240px;
+  background: #fff; border-radius: 8px;
+  box-shadow: 4px 8px 24px rgba(0,0,0,0.15);
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  transform: rotate(1deg);
+}
+.card-back .logo-text { font-size: 24px; font-weight: 600; letter-spacing: 1px; color: #222; }
+.card-back .logo-icon { position: absolute; right: 30px; top: 50%; transform: translateY(-50%); }
+.card-back .logo-icon svg { width: 50px; height: 50px; }
+
+/* Front card (bottom) */
+.card-front {
+  position: absolute; bottom: 0; left: 20px;
+  width: 420px; height: 240px;
+  background: #fff; border-radius: 8px;
+  box-shadow: 4px 8px 24px rgba(0,0,0,0.18);
+  padding: 30px 35px;
+  box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: space-between;
+  transform: rotate(-1deg);
+}
+.card-front .top-right { position: absolute; top: 25px; right: 30px; display: flex; align-items: center; gap: 10px; }
+.card-front .top-right .logo-text-sm { font-size: 16px; font-weight: 600; color: #222; letter-spacing: 0.5px; }
+.card-front .top-right svg { width: 32px; height: 32px; }
+
+.info { margin-top: auto; }
+.info .row { display: flex; justify-content: space-between; margin-bottom: 4px; }
+.info .name { font-size: 15px; font-weight: 600; color: #222; }
+.info .title { font-size: 13px; color: #222; }
+.info .contact { font-size: 13px; color: #222; }
+.info .address { font-size: 11.5px; color: #555; margin-top: 14px; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- Back card -->
+  <div class="card-back">
+    <span class="logo-text">Flowmus</span>
+    <div class="logo-icon">
+      <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 8 Q10 20 22 20 L22 8 Q22 8 10 8Z" fill="#2563EB"/>
+        <path d="M28 8 Q28 20 40 20 L40 8 Q40 8 28 8Z" fill="#2563EB"/>
+        <path d="M10 26 Q10 38 22 38 L22 26 Q22 26 10 26Z" fill="#2563EB"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Front card -->
+  <div class="card-front">
+    <div class="top-right">
+      <span class="logo-text-sm">Flowmus</span>
+      <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 8 Q10 20 22 20 L22 8 Q22 8 10 8Z" fill="#2563EB"/>
+        <path d="M28 8 Q28 20 40 20 L40 8 Q40 8 28 8Z" fill="#2563EB"/>
+        <path d="M10 26 Q10 38 22 38 L22 26 Q22 26 10 26Z" fill="#2563EB"/>
+      </svg>
+    </div>
+    <div class="info">
+      <div class="row">
+        <div>
+          <div class="name">Kwon Hyunwoo</div>
+          <div class="title">CEO</div>
+        </div>
+        <div style="text-align:right;">
+          <div class="contact">ceo@flowmus.com</div>
+          <div class="contact">010 9941 3425</div>
+        </div>
+      </div>
+      <div class="address">
+        Unit 709, 7th Floor, 398 Seocho-daero<br>
+        Seocho-gu, Seoul, South Korea
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f1117; padding: 24px; width: 800px; }
+.section { background: #1a1d27; border-radius: 16px; padding: 28px; margin-bottom: 20px; border: 1px solid #2a2d37; }
+h1 { color: #fff; font-family: 'Apple SD Gothic Neo', sans-serif; font-size: 24px; text-align: center; margin-bottom: 4px; }
+.sub { color: #666; font-family: 'Apple SD Gothic Neo', sans-serif; font-size: 12px; text-align: center; margin-bottom: 24px; }
+h2 { color: #fff; font-family: 'Apple SD Gothic Neo', sans-serif; font-size: 16px; margin-bottom: 16px; }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+.stat { background: #22252f; border-radius: 12px; padding: 16px; text-align: center; }
+.stat-label { color: #888; font-family: 'Apple SD Gothic Neo', sans-serif; font-size: 11px; }
+.stat-value { color: #fff; font-family: 'Apple SD Gothic Neo', sans-serif; font-size: 22px; font-weight: 700; margin-top: 4px; }
+.stat-note { color: #555; font-family: 'Apple SD Gothic Neo', sans-serif; font-size: 10px; margin-top: 2px; }
+.bar-row { display: flex; align-items: center; margin-bottom: 10px; font-family: 'Apple SD Gothic Neo', sans-serif; }
+.bar-label { color: #ccc; font-size: 12px; width: 130px; flex-shrink: 0; }
+.bar-wrap { flex: 1; height: 28px; background: #22252f; border-radius: 6px; position: relative; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 6px; display: flex; align-items: center; padding-left: 8px; }
+.bar-pct { color: #fff; font-size: 11px; font-weight: 600; }
+.bar-val { color: #666; font-size: 11px; margin-left: 8px; }
+.kw-row { display: flex; align-items: center; margin-bottom: 8px; font-family: 'Apple SD Gothic Neo', sans-serif; }
+.kw-label { color: #aaa; font-size: 11px; width: 140px; flex-shrink: 0; }
+.kw-bar-wrap { flex: 1; height: 20px; background: #22252f; border-radius: 4px; overflow: hidden; }
+.kw-bar-fill { height: 100%; background: #6366f1; border-radius: 4px; }
+.kw-val { color: #666; font-size: 10px; margin-left: 6px; width: 50px; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.legend-item { display: flex; align-items: center; gap: 4px; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+.legend-text { color: #888; font-family: 'Apple SD Gothic Neo', sans-serif; font-size: 10px; }
+.note { color: #555; font-family: 'Apple SD Gothic Neo', sans-serif; font-size: 10px; margin-top: 12px; line-height: 1.5; }
+.comp-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #22252f; font-family: 'Apple SD Gothic Neo', sans-serif; }
+.comp-name { color: #ccc; font-size: 12px; }
+.comp-desc { color: #666; font-size: 11px; }
+.tag { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 9px; font-weight: 600; margin-left: 4px; }
+.t-core { background: #1a3a2a; color: #4ade80; }
+.t-mid { background: #3a3a1a; color: #facc15; }
+.t-sub { background: #2a2a3a; color: #818cf8; }
+</style>
+</head>
+<body>
+
+<h1>duo.co.kr 트래픽 분석</h1>
+<p class="sub">2026.02.12 | 공개 데이터 기반 추정 | 진격의 마케팅</p>
+
+<div class="stats">
+  <div class="stat"><div class="stat-label">추정 MAU</div><div class="stat-value">~200K</div><div class="stat-note">월간 방문자</div></div>
+  <div class="stat"><div class="stat-label">추정 DAU</div><div class="stat-value">~7.5K</div><div class="stat-note">일간 방문자</div></div>
+  <div class="stat"><div class="stat-label">회원수</div><div class="stat-value">35,581</div><div class="stat-note">공식 수치</div></div>
+  <div class="stat"><div class="stat-label">누적 성혼</div><div class="stat-value">53,384</div><div class="stat-note">공식 수치</div></div>
+</div>
+
+<div class="section">
+  <h2>유입 경로별 비율</h2>
+  
+  <div class="bar-row">
+    <div class="bar-label">네이버 검색 (오가닉) <span class="tag t-core">핵심</span></div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,#6366f1,#818cf8)"><span class="bar-pct">35%</span><span class="bar-val">~70,000/월</span></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">네이버 검색광고 <span class="tag t-core">핵심</span></div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:71%;background:linear-gradient(90deg,#8b5cf6,#a78bfa)"><span class="bar-pct">25%</span><span class="bar-val">~50,000/월</span></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">직접 유입 <span class="tag t-mid">중요</span></div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:43%;background:linear-gradient(90deg,#a78bfa,#c4b5fd)"><span class="bar-pct">15%</span><span class="bar-val">~30,000/월</span></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">유튜브 / SNS <span class="tag t-mid">중요</span></div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:29%;background:linear-gradient(90deg,#22c55e,#4ade80)"><span class="bar-pct">10%</span><span class="bar-val">~20,000/월</span></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">구글 검색 <span class="tag t-sub">보조</span></div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:14%;background:#facc15"><span class="bar-pct">5%</span></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">블로그/카페 <span class="tag t-sub">보조</span></div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:14%;background:#fb923c"><span class="bar-pct">5%</span></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">뉴스/PR <span class="tag t-sub">보조</span></div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:9%;background:#f97316"><span class="bar-pct">3%</span></div></div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">기타 <span class="tag t-sub">보조</span></div>
+    <div class="bar-wrap"><div class="bar-fill" style="width:6%;background:#64748b"><span class="bar-pct">2%</span></div></div>
+  </div>
+  
+  <p class="note">* 네이버 의존도 약 60% (오가닉 35% + 광고 25%)<br>* 직접유입 15%는 브랜드 인지도가 높다는 의미<br>* 유튜브 14만 구독 → SNS 유입 성장 중</p>
+</div>
+
+<div class="section">
+  <h2>네이버 키워드별 콘텐츠 경쟁도 (블로그 게시물 수)</h2>
+  
+  <div class="kw-row"><div class="kw-label">결혼정보회사 추천</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:100%"></div></div><div class="kw-val">46,556</div></div>
+  <div class="kw-row"><div class="kw-label">결정사</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:96%"></div></div><div class="kw-val">44,501</div></div>
+  <div class="kw-row"><div class="kw-label">결혼정보회사 비용</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:73%"></div></div><div class="kw-val">33,843</div></div>
+  <div class="kw-row"><div class="kw-label">결혼정보회사 후기</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:52%"></div></div><div class="kw-val">24,270</div></div>
+  <div class="kw-row"><div class="kw-label">결혼정보회사 가입비</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:50%"></div></div><div class="kw-val">23,137</div></div>
+  <div class="kw-row"><div class="kw-label">결정사 추천</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:35%"></div></div><div class="kw-val">16,429</div></div>
+  <div class="kw-row"><div class="kw-label">결혼정보회사 가격</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:34%"></div></div><div class="kw-val">15,735</div></div>
+  <div class="kw-row"><div class="kw-label">결혼정보회사 순위</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:27%"></div></div><div class="kw-val">12,619</div></div>
+  <div class="kw-row"><div class="kw-label">결정사 비용</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:25%"></div></div><div class="kw-val">11,779</div></div>
+  <div class="kw-row"><div class="kw-label">결정사 후기</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:23%"></div></div><div class="kw-val">10,708</div></div>
+  <div class="kw-row"><div class="kw-label">듀오 결혼정보회사</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:21%;background:#a78bfa"></div></div><div class="kw-val">9,810</div></div>
+  <div class="kw-row"><div class="kw-label">듀오 가입비</div><div class="kw-bar-wrap"><div class="kw-bar-fill" style="width:4%;background:#a78bfa"></div></div><div class="kw-val">1,685</div></div>
+
+  <p class="note">* 수치 = 네이버 블로그 검색 결과 수 (콘텐츠 경쟁 강도 지표)<br>* 보라색 = 듀오 브랜드 키워드 (경쟁 낮음 → 진입 기회)</p>
+</div>
+
+<div class="section">
+  <h2>경쟁사 & 광고 현황</h2>
+  <div class="comp-row"><div class="comp-name">듀오</div><div class="comp-desc">매출1위 / 유일 상장사 / 유튜브 14만</div></div>
+  <div class="comp-row"><div class="comp-name">가연</div><div class="comp-desc">전국 다지점 / 가격 경쟁력</div></div>
+  <div class="comp-row"><div class="comp-name">제이노블</div><div class="comp-desc">46년 전통 / PDCA 매칭</div></div>
+  <div class="comp-row"><div class="comp-name">노블리에</div><div class="comp-desc">나솔28기 / 회원 4만</div></div>
+  <div class="comp-row"><div class="comp-name">퍼플스</div><div class="comp-desc">상류층 특화 / 럭셔리 파티</div></div>
+  <div class="comp-row"><div class="comp-name">엔노블</div><div class="comp-desc">SKY 동문회 제휴 / VVIP</div></div>
+  <p class="note" style="margin-top:12px">* 위 6개사 모두 네이버 파워링크 집행 중<br>* '결혼정보회사' 키워드 CPC 경쟁 치열</p>
+</div>
+
+<p class="note" style="text-align:center;padding:8px">공개 데이터 기반 추정치 | 정확한 수치는 GA/SimilarWeb Pro 필요</p>
+
+</body>
+</html>

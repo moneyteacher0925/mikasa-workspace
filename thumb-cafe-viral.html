@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body { margin: 0; padding: 0; }
+.thumb {
+  width: 500px;
+  height: 500px;
+  background: #2d8c4e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.left {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.badge {
+  background: #fff;
+  color: #2d8c4e;
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.title {
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  color: #000;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.tags {
+  display: flex;
+  gap: 8px;
+}
+.tag {
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 16px;
+}
+.right {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.cafe-icon {
+  width: 180px;
+  height: 180px;
+  background: #03c75a;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  flex-direction: column;
+  gap: 4px;
+}
+.cafe-n {
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+}
+.cafe-text {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+<div class="thumb">
+  <div class="left">
+    <div class="badge">100% 실사용자 보장</div>
+    <div class="title">바이럴<br>마케팅</div>
+    <div class="tags">
+      <span class="tag">카페</span>
+      <span class="tag">핫딜</span>
+      <span class="tag">커뮤니티</span>
+    </div>
+  </div>
+  <div class="right">
+    <div class="cafe-icon">
+      <div class="cafe-n">N</div>
+      <div class="cafe-text">CAFE</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

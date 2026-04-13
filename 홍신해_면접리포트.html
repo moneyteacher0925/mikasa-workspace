@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { margin: 40px 50px; size: A4; }
+  body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; color: #1a1a1a; line-height: 1.7; margin: 0; padding: 40px 50px; }
+  h1 { font-size: 22px; border-bottom: 3px solid #1a1a1a; padding-bottom: 10px; margin-bottom: 5px; }
+  .meta { color: #666; font-size: 13px; margin-bottom: 30px; }
+  .section { margin-bottom: 28px; }
+  .section-title { font-size: 16px; font-weight: 700; color: #fff; background: #2c3e50; padding: 8px 14px; border-radius: 4px; margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 10px; font-size: 14px; }
+  table th { background: #f4f6f8; text-align: left; padding: 10px 12px; border: 1px solid #ddd; width: 140px; }
+  table td { padding: 10px 12px; border: 1px solid #ddd; }
+  .qa { margin-bottom: 18px; }
+  .qa-q { font-weight: 700; font-size: 14px; color: #2c3e50; margin-bottom: 4px; }
+  .qa-a { font-size: 14px; padding-left: 14px; border-left: 3px solid #3498db; margin-left: 2px; }
+  .eval-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .eval-item { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 6px; padding: 12px 16px; }
+  .eval-label { font-size: 13px; color: #666; margin-bottom: 4px; }
+  .eval-score { font-size: 20px; font-weight: 700; }
+  .star { color: #f59e0b; }
+  .summary-box { background: #f0f7ff; border: 1px solid #bdd7f1; border-radius: 6px; padding: 16px 20px; font-size: 14px; }
+  .tag { display: inline-block; background: #e8f5e9; color: #2e7d32; font-size: 12px; padding: 3px 10px; border-radius: 12px; margin-right: 6px; margin-bottom: 4px; }
+  .tag.caution { background: #fff3e0; color: #e65100; }
+  .footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid #ddd; font-size: 12px; color: #999; text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>MD 채용 면접 리포트</h1>
+<div class="meta">면접일: 2026년 3월 4일 (수) 18:00 | 장소: 안산 힐스테이트 에코 14층 | 면접관: 에렌 대표</div>
+
+<div class="section">
+  <div class="section-title">1. 지원자 기본정보</div>
+  <table>
+    <tr><th>성명</th><td>홍신해</td></tr>
+    <tr><th>지원 포지션</th><td>MD (상품기획/관리)</td></tr>
+    <tr><th>주요 경력</th><td>올리빙 → 팬물산 (팀장 이직 시 동반 이동)</td></tr>
+    <tr><th>핵심 업무영역</th><td>쿠팡 로켓배송 어드민, 납품/발주/물류 관리</td></tr>
+    <tr><th>관리 규모</th><td>월매출 약 15억원 / SKU 400개+</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <div class="section-title">2. 면접 Q&A 상세</div>
+
+  <div class="qa">
+    <div class="qa-q">Q1. 쿠팡 FC 입고 시 회송(반려) 경험 — 가장 기억에 남는 사유와 해결 방법은?</div>
+    <div class="qa-a">
+      물류센터에 바코드 관련 이슈로 회송된 경험이 있으며, 직접 물류센터에 바코드 재요청 및 "이번만 봐달라"는 현장 소통으로 해결.
+      SRMS 내에서 파손이나 바코드 불량으로 차량 전체가 회송되는 경우에는 담당자와 직접 통화하여 조율하는 방식으로 대응함.
+    </div>
+  </div>
+
+  <div class="qa">
+    <div class="qa-q">Q2. 월매출 15억 규모의 발주 스케줄 관리 방식은?</div>
+    <div class="qa-a">
+      발주 스케줄은 매일 발생하며, 로켓 VF발주의 경우 2일 후 입고가 기본이나 당일 입고 발주가 뜨는 경우도 있음.
+      복잡한 스케줄 속에서도 체계적으로 일처리하는 모습이 인상적이었음.
+      평균 데이터를 모니터링하면서 발주량이 적으면 인스탁(쿠팡 담당)과 소통해 발주량을 늘리고, 과다 발주 시에는 뒤로 미뤄 매출 손실을 최소화하는 전략적 접근.
+    </div>
+  </div>
+
+  <div class="qa">
+    <div class="qa-q">Q3. 출고 방법 및 배차 경험은?</div>
+    <div class="qa-a">
+      밀크런, 트럭, 택배 등 다양한 출고 방식에 대한 이해도가 있음.
+      트럭 배차 시 대행업체를 활용하며, 월말 정산 방식으로 운영.
+      트럭 크기별 파렛트 적재량에 대한 실무적 이해도 보유.
+    </div>
+  </div>
+
+  <div class="qa">
+    <div class="qa-q">Q4. 업무 범위 밖의 회색영역 — 억울하거나 비효율적이라 느낀 경험은?</div>
+    <div class="qa-a">
+      컨테이너 일정 관리는 본래 무역팀 소관이라고 생각하지만, 회사에서 하라면 한다는 유연한 태도.
+      다만 대표의 지나친 개인적 업무 요청에 대해서는 의견을 말하는 편이라고 함.
+      → 지시에 순응하되 합리적 선을 지키는 성향으로 판단됨.
+    </div>
+  </div>
+
+  <div class="qa">
+    <div class="qa-q">Q5. 400개 SKU 관리 중 품절/오발주 실수 시 자발적 보고 경험은?</div>
+    <div class="qa-a">
+      상급자가 알기 전에 먼저 보고하는 스타일. "나중에 알게 되면 더 무섭기 때문에" 선제적으로 보고하고 수습한다고 함.
+      → 책임감 있고 투명한 업무 태도로 평가됨.
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">3. 면접관 종합 평가</div>
+  <div class="eval-grid">
+    <div class="eval-item">
+      <div class="eval-label">쿠팡 로켓배송 실무 이해도</div>
+      <div class="eval-score"><span class="star">★★★★★</span> 5/5</div>
+    </div>
+    <div class="eval-item">
+      <div class="eval-label">발주/물류 관리 역량</div>
+      <div class="eval-score"><span class="star">★★★★★</span> 5/5</div>
+    </div>
+    <div class="eval-item">
+      <div class="eval-label">문제해결 & 현장 소통력</div>
+      <div class="eval-score"><span class="star">★★★★</span>☆ 4/5</div>
+    </div>
+    <div class="eval-item">
+      <div class="eval-label">책임감 & 보고 태도</div>
+      <div class="eval-score"><span class="star">★★★★★</span> 5/5</div>
+    </div>
+    <div class="eval-item">
+      <div class="eval-label">조직 적응력</div>
+      <div class="eval-score"><span class="star">★★★★</span>☆ 4/5</div>
+    </div>
+    <div class="eval-item">
+      <div class="eval-label">종합 추천도</div>
+      <div class="eval-score"><span class="star">★★★★★</span> 5/5</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">4. 강점 & 참고사항</div>
+  <p style="font-size:14px; margin-bottom: 10px;"><b>강점</b></p>
+  <div>
+    <span class="tag">로켓배송 어드민 청산유수</span>
+    <span class="tag">발주량 조절 전략적 사고</span>
+    <span class="tag">배차/물류 이해도 높음</span>
+    <span class="tag">선제적 보고 습관</span>
+    <span class="tag">팀장 동반 이직 → 신뢰도</span>
+  </div>
+  <p style="font-size:14px; margin-top: 16px; margin-bottom: 10px;"><b>참고사항</b></p>
+  <div>
+    <span class="tag caution">회색영역에 대한 경계 명확 (장단점 공존)</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">5. 종합 의견</div>
+  <div class="summary-box">
+    쿠팡 로켓배송 납품/발주/물류 전반에 걸쳐 실무 경험이 풍부하고, 특히 어드민 관련 답변이 매우 유창했음.
+    월매출 15억 / SKU 400개 이상 관리 경력은 당사 규모에서 즉시 전력감으로 판단됨.
+    발주 데이터를 기반으로 인스탁과 소통하며 매출 손실을 최소화하는 전략적 사고가 돋보이며,
+    실수 발생 시 선제 보고하는 태도는 조직 내 신뢰 구축에 긍정적 요소.
+    팀장 이직 시 동반 이동한 이력은 상급자에게 인정받는 인재임을 시사함.<br><br>
+    <b>→ 채용 적극 추천</b>
+  </div>
+</div>
+
+<div class="footer">
+  본 리포트는 2026년 3월 4일 대면 면접을 기반으로 작성되었습니다. | 작성: 에렌 대표
+</div>
+
+</body>
+</html>

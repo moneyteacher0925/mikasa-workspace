@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>딱모여 개발자 미팅 준비자료 - 2026.03.27</title>
+<style>
+body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; font-size: 14px; line-height: 1.6; color: #222; }
+h1 { font-size: 20px; border-bottom: 3px solid #222; padding-bottom: 8px; margin-bottom: 20px; }
+h2 { font-size: 16px; background: #222; color: #fff; padding: 6px 12px; margin-top: 24px; }
+h3 { font-size: 14px; margin-top: 16px; border-left: 4px solid #222; padding-left: 8px; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 13px; }
+th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; }
+th { background: #f0f0f0; font-weight: bold; }
+.checkbox { margin: 4px 0; }
+.checkbox input { margin-right: 6px; }
+.section { margin-bottom: 16px; }
+.highlight { background: #fff3cd; padding: 8px 12px; border-left: 4px solid #ffc107; margin: 10px 0; font-size: 13px; }
+.note { color: #666; font-size: 12px; }
+ul { margin: 6px 0; padding-left: 20px; }
+li { margin: 3px 0; }
+@media print { body { font-size: 12px; } h1 { font-size: 18px; } }
+</style>
+</head>
+<body>
+
+<h1>🔧 딱모여 개발자 미팅 준비자료</h1>
+<p><strong>일시:</strong> 2026.03.27 (금) 19:30 &nbsp; <strong>장소:</strong> 서초 사무실 4층 &nbsp; <strong>참석:</strong> 에렌, 천주원 개발자</p>
+
+<h2>1. 미팅 목표</h2>
+<ul>
+<li>딱모여 백엔드 개발 범위 확정</li>
+<li>기술 스택 및 DB 설계 방향 논의</li>
+<li>개발 일정 및 비용 협의</li>
+<li>유지보수 방식 합의</li>
+</ul>
+
+<h2>2. 백엔드 요구사항 (개발 범위)</h2>
+
+<h3>A. 모임 등록/관리 (호스트)</h3>
+<table>
+<tr><th>기능</th><th>설명</th><th>우선순위</th></tr>
+<tr><td>모임 생성</td><td>제목, 설명, 카테고리, 날짜/시간, 장소, 정원, 모임비</td><td>필수</td></tr>
+<tr><td>모임 수정/삭제</td><td>호스트가 본인 모임 편집</td><td>필수</td></tr>
+<tr><td>카테고리 분류</td><td>재테크/사업/운동/연애/맛집/자기계발 (6개 + 하위)</td><td>필수</td></tr>
+<tr><td>모임 상태 관리</td><td>모집중/마감/완료/취소</td><td>필수</td></tr>
+<tr><td>반복 모임</td><td>정기 모임 자동 생성</td><td>2차</td></tr>
+</table>
+
+<h3>B. 참가 신청 처리</h3>
+<table>
+<tr><th>기능</th><th>설명</th><th>우선순위</th></tr>
+<tr><td>신청</td><td>참가자가 모임 신청 (이름, 연락처, 간단 소개)</td><td>필수</td></tr>
+<tr><td>승인/거절</td><td>호스트가 신청자 승인 또는 거절</td><td>필수</td></tr>
+<tr><td>대기열</td><td>정원 초과 시 대기 리스트</td><td>필수</td></tr>
+<tr><td>노쇼 관리</td><td>노쇼 기록, 반복 노쇼 제한</td><td>2차</td></tr>
+<tr><td>알림</td><td>신청/승인/거절/리마인드 알림</td><td>필수</td></tr>
+</table>
+
+<h3>C. 결제 연동</h3>
+<table>
+<tr><th>기능</th><th>설명</th><th>우선순위</th></tr>
+<tr><td>모임비 결제</td><td>토스페이먼츠 연동, 신청 시 결제</td><td>필수</td></tr>
+<tr><td>환불 처리</td><td>취소 시 자동/수동 환불</td><td>필수</td></tr>
+<tr><td>정산</td><td>호스트에게 모임비 정산 (수수료 제외)</td><td>필수</td></tr>
+<tr><td>무료 모임</td><td>결제 없이 신청만</td><td>필수</td></tr>
+</table>
+
+<h3>D. 카톡/오픈채팅 연동</h3>
+<table>
+<tr><th>기능</th><th>설명</th><th>우선순위</th></tr>
+<tr><td>오픈채팅 링크</td><td>모임별 카톡 오픈채팅방 링크 자동 노출</td><td>필수</td></tr>
+<tr><td>승인 후 공개</td><td>참가 승인된 사람만 링크 열람</td><td>필수</td></tr>
+<tr><td>카톡 알림</td><td>알림톡 API 연동 (신청/승인/리마인드)</td><td>2차</td></tr>
+</table>
+
+<h3>E. 어드민 패널</h3>
+<table>
+<tr><th>기능</th><th>설명</th><th>우선순위</th></tr>
+<tr><td>회원 관리</td><td>회원 목록, 검색, 차단</td><td>필수</td></tr>
+<tr><td>모임 관리</td><td>전체 모임 조회, 강제 취소</td><td>필수</td></tr>
+<tr><td>정산 관리</td><td>호스트별 정산 현황, 수수료 관리</td><td>필수</td></tr>
+<tr><td>통계 대시보드</td><td>가입자 수, 모임 수, 매출, 카테고리별 현황</td><td>2차</td></tr>
+<tr><td>신고 관리</td><td>부적절 모임/회원 신고 처리</td><td>2차</td></tr>
+</table>
+
+<h3>F. 회원/인증</h3>
+<table>
+<tr><th>기능</th><th>설명</th><th>우선순위</th></tr>
+<tr><td>회원가입/로그인</td><td>카카오 소셜로그인 (우선), 네이버/구글</td><td>필수</td></tr>
+<tr><td>프로필</td><td>이름, 사진, 소개, 관심 카테고리</td><td>필수</td></tr>
+<tr><td>호스트 신청</td><td>일반→호스트 전환 신청/승인</td><td>필수</td></tr>
+</table>
+
+<h2>3. 기술 스택 논의사항</h2>
+<div class="highlight">
+천주원 개발자 사전 의견: Next.js + TypeScript (프론트), 서버/DB는 별도 구축 필요. RLS 정책, 개인정보 저장 방법론 고려해야 함.
+</div>
+<table>
+<tr><th>영역</th><th>후보</th><th>질문</th></tr>
+<tr><td>프론트엔드</td><td>Next.js + TypeScript (Vercel)</td><td>확정?</td></tr>
+<tr><td>백엔드</td><td>Supabase? / Node.js? / 다른 추천?</td><td>주원님 추천은?</td></tr>
+<tr><td>DB</td><td>PostgreSQL (Supabase 포함)?</td><td>테이블 수 예상?</td></tr>
+<tr><td>결제</td><td>토스페이먼츠 / 포트원</td><td>어느 쪽이 연동 편한지?</td></tr>
+<tr><td>호스팅</td><td>Vercel (프론트) + ? (서버)</td><td>서버 호스팅 추천?</td></tr>
+<tr><td>인증</td><td>카카오 로그인 OAuth</td><td>구현 난이도?</td></tr>
+</table>
+
+<h2>4. 질문 리스트 (미팅에서 물어볼 것)</h2>
+
+<h3>개발 범위 & 비용</h3>
+<div class="section">
+<div class="checkbox">☐ 위 백엔드 범위 기준 개발 비용 견적은?</div>
+<div class="checkbox">☐ 1차(필수)만 먼저 하면 비용이 얼마나 줄어드는지?</div>
+<div class="checkbox">☐ 프론트는 우리(AI)가 하고 백엔드만 맡기는 구조 가능한지?</div>
+<div class="checkbox">☐ 개발 기간 예상? (1차 MVP 기준)</div>
+</div>
+
+<h3>기술 구조</h3>
+<div class="section">
+<div class="checkbox">☐ DB 테이블 몇 개 정도 예상되는지?</div>
+<div class="checkbox">☐ Supabase vs 자체 서버 중 추천은?</div>
+<div class="checkbox">☐ 환경변수/API키 관리 어떻게 하는 게 좋은지?</div>
+<div class="checkbox">☐ 나중에 앱으로 전환할 때 백엔드 재사용 가능한 구조?</div>
+</div>
+
+<h3>유지보수</h3>
+<div class="section">
+<div class="checkbox">☐ 납품 후 무상 버그 수정 기간은?</div>
+<div class="checkbox">☐ 이후 유지보수 방식? (월 리테이너 vs 건별)</div>
+<div class="checkbox">☐ 긴급 장애 대응 (서버 다운 등) 어떻게 하는지?</div>
+<div class="checkbox">☐ 우리가 AI로 프론트 수정할 때 백엔드 영향 없는 구조 가능한지?</div>
+</div>
+
+<h3>일정 & 진행방식</h3>
+<div class="section">
+<div class="checkbox">☐ 개발 시작 가능 시점?</div>
+<div class="checkbox">☐ 중간 점검 방식? (주간 미팅 등)</div>
+<div class="checkbox">☐ 결제 조건? (착수금/중도금/잔금 비율)</div>
+<div class="checkbox">☐ 기획서/와이어프레임 어디까지 준비해가면 되는지?</div>
+</div>
+
+<h2>5. 우리 측 현황 공유사항</h2>
+<ul>
+<li>도메인: ddakmoyeo.com (Vercel 연결 완료)</li>
+<li>프론트: AI(Claude Code + Antigravity)로 제작 예정</li>
+<li>카테고리 6개 확정 (재테크/사업/운동/연애/맛집/자기계발)</li>
+<li>초기 전략: 웹사이트 전에 네이버카페+구글폼+카톡방으로 먼저 시작 (검증 완료 후 개발)</li>
+<li>수익모델: 모임비 수수료 + RS(모임 후 브로커/회사 연결)</li>
+<li>당근 비즈프로필 생성 완료</li>
+<li>채널톡, GA4 연동 예정</li>
+</ul>
+
+<h2>6. 미팅 후 체크리스트</h2>
+<div class="section">
+<div class="checkbox">☐ 견적서 요청 (서면)</div>
+<div class="checkbox">☐ 개발 일정표 확인</div>
+<div class="checkbox">☐ 계약서 작성 여부</div>
+<div class="checkbox">☐ 다음 미팅 일정 잡기</div>
+<div class="checkbox">☐ 기획서/와이어프레임 제출 기한 확인</div>
+</div>
+
+<p class="note" style="margin-top: 30px; text-align: center;">딱모여 개발자 미팅 | 2026.03.27 19:30 | 서초 사무실 4층</p>
+
+</body>
+</html>

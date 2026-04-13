@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mikasa//TODO//KO
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Seoul:20260316T100000
+DTEND;TZID=Asia/Seoul:20260316T120000
+SUMMARY:가든잇 (안산) - 이플케어 마케팅 체크
+DESCRIPTION:- 카페바이럴 자동화 진행 확인\n- 유튜버 협찬 컨택 후속 확인 (초식남/식물튜브/그린썸)\n- 분갈이흙 허브키워드 결정
+LOCATION:안산 가든잇 사무실
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Seoul:20260316T140000
+DTEND;TZID=Asia/Seoul:20260316T180000
+SUMMARY:플로우머스 (강남) - 보증보험/런칭 준비
+DESCRIPTION:- SGI 보증보험 진행 확인 (02-3474-0021)\n- 결혼중개업 신고 준비\n- 차희연 대표 협업 후속 정리\n- 오맷돌 대표님 마케팅 싱크
+LOCATION:서초구 서초대로 398 그레이츠강남 701호
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Seoul:20260316T090000
+DTEND;TZID=Asia/Seoul:20260316T093000
+SUMMARY:플로우머스 가수금 상환 이체 100만원
+DESCRIPTION:법인계좌 → 에렌 개인계좌\n적요: 대표자 가수금 상환\n이체 후 잔여: 6,325,500원
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

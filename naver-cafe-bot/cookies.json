@@ -1,0 +1,10 @@
+[
+  {"name":"NID_SES","value":"AAABy+89+NexiHK9T0Msr+DyjZLC5GnETBqF6RQHSjPHGVD9kcJRg6tj3mOPdi7XkSU83KgUcvlL1DL0jwv8/8eWEeso0a1V75a8jVtEyN1ah/2gf9UJzfNQApdTMnyxOBXnKKOp1/wCOkqbT/hGtxR63m6FYrtGnmi34EblAMHhP/DnS98NRA1ZZqc5YKlry7KZnh0LXHbVm9TBnlbxU4HDqcf2cDsE4vbEVmy0k3WHn5J/U+yw7pvPVe6eg8qi+/W9UZEFX0+qNoTzimjpRSza3i5e36k/LcoOTk3uh1hFR5vyj3eM4uzr61l4yQrSOloUJw09eNm4JYzBcw0eSJBeY0ayrevLlHuRXIEeK7VXPzzpmcOB1FFyEfHjwC8loY2TUdSuJbb7t2G0VaG4umQ2SfqD79OVleESC4ZqB0/mRrmJSgkXESAPLpIOcmsXLm0GuRCZ65efj3pAvjnoZJZZJH8Ot2QaxQseqoE7JD3x5Bl6FJ07e0koaCzFwbpTE/qMIBYqRcx5DFBfpx4LFYfp4QoazKmIfFKOaZPjabb89x9a9p+heyplfHMff6Uk4YVditmhrvSy/P4suyQB1PU8jddCkRNBpJir8bUWk8IhdNZP","domain":".naver.com","path":"/","httpOnly":false,"secure":true},
+  {"name":"NNB","value":"NPZGSHUBP2GWS","domain":".naver.com","path":"/","httpOnly":false,"secure":true},
+  {"name":"nid_inf","value":"1144016705","domain":".naver.com","path":"/","httpOnly":false,"secure":true},
+  {"name":"NAC","value":"XKEHB8gjkJDy","domain":".naver.com","path":"/","httpOnly":false,"secure":false},
+  {"name":"NACT","value":"1","domain":".naver.com","path":"/","httpOnly":false,"secure":false},
+  {"name":"ASID","value":"dc4a5be30000019c517e08660000001d","domain":".naver.com","path":"/","httpOnly":false,"secure":false},
+  {"name":"ncvid","value":"#vid#_220.74.91.2270WIS","domain":".naver.com","path":"/","httpOnly":false,"secure":false},
+  {"name":"ncu","value":"9fb05b756e3d4ca38b1976617aac1870c4c669e8abd038","domain":".naver.com","path":"/","httpOnly":false,"secure":false}
+]

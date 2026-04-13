@@ -1,0 +1,407 @@
+[
+  {
+    "name": "nid_buk",
+    "value": "NPZGSHUBP2GWS",
+    "domain": ".nid.naver.com",
+    "path": "/",
+    "expires": 1805451231,
+    "secure": true,
+    "httpOnly": false
+  },
+  {
+    "name": "ASID",
+    "value": "dc4a5be30000019c517e08660000001d",
+    "domain": ".naver.com",
+    "path": "/",
+    "expires": 1805453740,
+    "secure": true,
+    "httpOnly": false
+  },
+  {
+    "name": "_fwb",
+    "value": "121MNVhs8GTJfe636ftEjaD.1770891231174",
+    "domain": ".developers.naver.com",
+    "path": "/",
+    "expires": 1805620474,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "wcs_bt",
+    "value": "395c28a8f51174:1771060474",
+    "domain": "developers.naver.com",
+    "path": "/",
+    "expires": 1805620474,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "BA_DEVICE",
+    "value": "790dd11e-fd13-4935-989f-ed40ad109c69",
+    "domain": ".blog.naver.com",
+    "path": "/",
+    "expires": 1805816184,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "_fbp",
+    "value": "fb.1.1771256271225.180206282498240771",
+    "domain": ".naver.com",
+    "path": "/",
+    "expires": 1779032271,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "wcs_bt",
+    "value": "s_274e148c2f52b:1771256270",
+    "domain": "smartstore.naver.com",
+    "path": "/baoliving",
+    "expires": 1805816270,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "ncvid",
+    "value": "#vid#_220.74.91.2270WIS",
+    "domain": ".cafe.naver.com",
+    "path": "/",
+    "expires": 1805816611,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "wcs_bt",
+    "value": "s_a2c408c45abf:1771256906",
+    "domain": "smartstore.naver.com",
+    "path": "/maisonfoodlab",
+    "expires": 1805816906,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "wcs_bt",
+    "value": "s_2654430070ef2:1771256936",
+    "domain": "smartstore.naver.com",
+    "path": "/gardenings",
+    "expires": 1805816936,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "naver_stock_codeList",
+    "value": "230360%7C",
+    "domain": ".finance.naver.com",
+    "path": "/",
+    "expires": 1773987748,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "SHP_BUCKET_ID",
+    "value": "1",
+    "domain": ".shopping.naver.com",
+    "path": "/",
+    "expires": 1802936129,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "wcs_bt",
+    "value": "s_2c8468153d5d5:1771400168",
+    "domain": "smartstore.naver.com",
+    "path": "/dj97",
+    "expires": 1805960168,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "wcs_bt",
+    "value": "s_10a27e01df998:1771400436",
+    "domain": "smartstore.naver.com",
+    "path": "/dj8224988",
+    "expires": 1805960436,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "_fwb",
+    "value": "233FGWNWa8y1Mg35BgZ7mQn.1770892447837",
+    "domain": ".manage.searchad.naver.com",
+    "path": "/",
+    "expires": 1805961677,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "_fwb",
+    "value": "44UCSVuOCIh5GDVbrqAI7Q.1770892447865",
+    "domain": ".searchad.naver.com",
+    "path": "/",
+    "expires": 1805961677,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "wcs_bt",
+    "value": "2413704dbffb64:1771401677",
+    "domain": "manage.searchad.naver.com",
+    "path": "/",
+    "expires": 1805961677,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "NWB",
+    "value": "dd62da0a810ffea213dc8a14d68c89f5.1770880946750",
+    "domain": ".wcs.naver.com",
+    "path": "/",
+    "expires": 1805962431,
+    "secure": true,
+    "httpOnly": false
+  },
+  {
+    "name": "NWB_LEGACY",
+    "value": "dd62da0a810ffea213dc8a14d68c89f5.1770880946750",
+    "domain": ".wcs.naver.com",
+    "path": "/",
+    "expires": 1805962431,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "_fwb",
+    "value": "169IpjGIonAAL5k1Mk6sxWQ.1771256270840",
+    "domain": ".smartstore.naver.com",
+    "path": "/",
+    "expires": 1805962431,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "cto_bundle",
+    "value": "NEOz0l80UGF6RUllWnI5WnFTQVljN05VRmdDb2FJdU1nVHNMTE5tNDFnS2NhQmVKejhTYTJFWll5SWVtMEw3VVhPMzV6bTJPQ0E0UjdVUDRyRHdqOTl2VTc0WGJzbU55V0VWRk9kbCUyQnVaNkolMkJUUHVaRWc0Q0VhU0hMblJ0TWl1cUFQY1RvS2NvQWVGWG9mb1RweDFwNXlHU1lKJTJCQjhZUUw4cGdrejhWNHc0UVgzYThnY3dIV1A2VEJFNkxPdXM1dmx3STI",
+    "domain": ".naver.com",
+    "path": "/",
+    "expires": 1805566431,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "wcs_bt",
+    "value": "s_3b7ef6e7fb74:1771402431",
+    "domain": "smartstore.naver.com",
+    "path": "/gardenit_official",
+    "expires": 1805962431,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "NID_SAUTO",
+    "value": "JNXsaYnBcrzoFWdkvBDW3V3RJqEk0CWikTcWI/eHTXA4XOGu0IvsjtIWHi+otRXH",
+    "domain": ".nid.naver.com",
+    "path": "/",
+    "expires": 1775665527,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "nci4",
+    "value": "0031daf9eaaacb7725cb8c9b967a117fdf9e718cc2a24db66c981ee90e47b471cc4df96d0b398e84c2491dca67de46ad577f72459f9bf7d0c427b12393ac31d78ea8b2bd9cbb88c2b8b792b583cfa0ab8fa794dbaca386a1ae9f929abe99a4eeedeff8f1f6f2f08588af87b5fdfc91828181ea9588e5968f54",
+    "domain": ".cafe.naver.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "ncmc4",
+    "value": "88b95271622243ffad4304131ee79ff74a10e81f5a0fe516e4061dfb725fb25db46499478d97203c05e8b54dd347c400d1d1dcfd3010717e6a9f74a928",
+    "domain": ".cafe.naver.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "ncu",
+    "value": "84b345716a265cfed43f704f5494deb81a599a",
+    "domain": ".cafe.naver.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "7711ACC7D90E422A35BA43AA8905A377",
+    "domain": "route-like.naver.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": true
+  },
+  {
+    "name": "NAC",
+    "value": "XKEHB8gjkJDy",
+    "domain": ".naver.com",
+    "path": "/",
+    "expires": 1807659911,
+    "secure": true,
+    "httpOnly": false
+  },
+  {
+    "name": "NACT",
+    "value": "1",
+    "domain": ".naver.com",
+    "path": "/",
+    "expires": 1773186311,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "NACT",
+    "value": "1",
+    "domain": ".naver.com",
+    "path": "/terrapot",
+    "expires": 1773186311,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "PM_CK_loc",
+    "value": "bd09d80245d9082f3a1a2178ea68f40eac7c868a96bce45c3a11048652dceec4",
+    "domain": "www.naver.com",
+    "path": "/",
+    "expires": 1773186339,
+    "secure": false,
+    "httpOnly": true
+  },
+  {
+    "name": "NM_srt_chzzk",
+    "value": "1",
+    "domain": "www.naver.com",
+    "path": "/",
+    "expires": 1773186416,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "NIB2",
+    "value": "1aJAWCcZxbbveJy8p",
+    "domain": ".ni.naver.com",
+    "path": "/",
+    "expires": 1807660702,
+    "secure": true,
+    "httpOnly": false
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "FD9EEF0A55575BDCFF57C0CD4A606359",
+    "domain": "cafe.naver.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": true
+  },
+  {
+    "name": "notecount",
+    "value": "9",
+    "domain": "note.naver.com",
+    "path": "/",
+    "expires": 1773104828,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "NID_AUT",
+    "value": "KLoc5O3dJf7aaXh83tRnv9HXGHGZ7mZ0tkdkZ2btPGf3GH9o1ohHF4WOO5wVZicO",
+    "domain": ".naver.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "name": "NID_JST",
+    "value": "zHAWlauhCTw1cgLGMwpOecdQEq/0HEy7YoPMlNzAdX5+AzqqKCQno3iRXsmxR7a5BKjBtBSH9sBrQRxQwLWlYjII8k1siPicswXaJk8ztyG96jeyaeG35jP1qG0U1u3SMa//aBElrnfnHDM9Gl8jXYzjKkmu+4O1KfyHLhD6JaQ=",
+    "domain": ".nid.naver.com",
+    "path": "/",
+    "expires": 1790382732,
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "name": "NID_SES",
+    "value": "AAABhaLWbugfEUxXlAtQ7BwTjs0pmJ2oZ1f5/8c3EG/oBefoTy+BOs65S3MrQtiD3xMns1z3jxleYzHqSQc8G+I4Soa8iZWRPHARm4js4Ehg6EmTDBEA5GJfEYTsdeKKmYAQrPK3hXM4C8PM4Miw6QMjIGYiBWMigrkXSTQ2f927xgKtlzXhb+jo9r888L/XcvvMpSSTB/bj3ViJiGafmmvRSUFOjDX1qXsSW1PijQ+ZqaftJBnFAz+ZwyWGRnMB3CisDT5oeE8rsbtCbBPnQI0B2YtX7SZ9iI+QKBSKFMm4E5P0C4Fj2rhbbGw1Erm0tNkK5yIoD/5NJHu6RhTT5sgwDwzBUWbGYW3lW7/Xq34n0sgWZDvxYMMJbQJtv0zlq5+uBX9YwYf2c4TNcampUwM9cO0VHEgbU4xAScjzJBIDT/NRyT0QzJDOrojnUzm400MPlJf3PwnwAGzFpBAuYqikj82KYePqxJbrTcDqrqVYr4Bkm2Mh/+zTs3w6jgfqLL8lzNh0hQfGGPl1AFRx+LNIW84=",
+    "domain": ".naver.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false
+  },
+  {
+    "name": "NM_srt_lounge",
+    "value": "1",
+    "domain": "www.naver.com",
+    "path": "/",
+    "expires": 1773189135,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "nid_inf",
+    "value": "1111514001",
+    "domain": ".naver.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "nid_slevel",
+    "value": "1",
+    "domain": ".nid.naver.com",
+    "path": "/",
+    "expires": 1804638732,
+    "secure": false,
+    "httpOnly": false
+  },
+  {
+    "name": "BUC",
+    "value": "5CBwt6VbyuBa0h-av0bOj2dZhD0jha-xvL5V3RdolYs=",
+    "domain": ".naver.com",
+    "path": "/",
+    "expires": 1807663916,
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "18C2DFB535AAE06F37B2870C55EED172",
+    "domain": "www.naver.com",
+    "path": "/",
+    "secure": false,
+    "httpOnly": true
+  },
+  {
+    "name": "NNB",
+    "value": "NPZGSHUBP2GWS",
+    "domain": ".naver.com",
+    "path": "/",
+    "expires": 1807663916,
+    "secure": true,
+    "httpOnly": false
+  },
+  {
+    "name": "SRT30",
+    "value": "1773072032",
+    "domain": ".naver.com",
+    "path": "/",
+    "expires": 1773105716,
+    "secure": true,
+    "httpOnly": false
+  },
+  {
+    "name": "SRT5",
+    "value": "1773103914",
+    "domain": ".naver.com",
+    "path": "/",
+    "expires": 1773104216,
+    "secure": true,
+    "httpOnly": false
+  }
+]

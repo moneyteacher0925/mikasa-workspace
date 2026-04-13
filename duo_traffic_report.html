@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>duo.co.kr 트래픽 분석 리포트</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Apple SD Gothic Neo', sans-serif; background: #0f1117; color: #e0e0e0; padding: 40px; }
+.container { max-width: 1200px; margin: 0 auto; }
+h1 { font-size: 32px; color: #fff; margin-bottom: 8px; }
+.subtitle { color: #888; font-size: 14px; margin-bottom: 40px; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
+.card { background: #1a1d27; border-radius: 12px; padding: 24px; border: 1px solid #2a2d37; }
+.card-label { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+.card-value { font-size: 28px; font-weight: 700; color: #fff; margin-top: 8px; }
+.card-note { font-size: 12px; color: #666; margin-top: 4px; }
+.chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px; }
+.chart-box { background: #1a1d27; border-radius: 12px; padding: 24px; border: 1px solid #2a2d37; }
+.chart-box h2 { font-size: 18px; color: #fff; margin-bottom: 16px; }
+.full-width { grid-column: 1 / -1; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+th { text-align: left; padding: 10px 12px; background: #22252f; color: #aaa; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+td { padding: 10px 12px; border-bottom: 1px solid #2a2d37; font-size: 14px; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.tag-high { background: #1a3a2a; color: #4ade80; }
+.tag-mid { background: #3a3a1a; color: #facc15; }
+.tag-low { background: #3a1a1a; color: #f87171; }
+.badge { display: inline-block; background: #6366f1; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 11px; }
+.disclaimer { background: #1a1d27; border-radius: 12px; padding: 20px; border: 1px solid #2a2d37; margin-top: 40px; }
+.disclaimer h3 { color: #f59e0b; font-size: 14px; margin-bottom: 8px; }
+.disclaimer p { color: #888; font-size: 13px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>duo.co.kr 트래픽 분석 리포트</h1>
+  <p class="subtitle">분석일: 2026.02.12 | 분석: 미카사 (진격의 마케팅) | 데이터 기반: 공개 데이터 추정치</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="card-label">추정 MAU</div>
+      <div class="card-value">~200K</div>
+      <div class="card-note">월간 활성 사용자</div>
+    </div>
+    <div class="card">
+      <div class="card-label">추정 DAU</div>
+      <div class="card-value">~7.5K</div>
+      <div class="card-note">일간 활성 사용자</div>
+    </div>
+    <div class="card">
+      <div class="card-label">회원수</div>
+      <div class="card-value">35,581</div>
+      <div class="card-note">2026.2.9 기준 공식 수치</div>
+    </div>
+    <div class="card">
+      <div class="card-label">누적 성혼수</div>
+      <div class="card-value">53,384</div>
+      <div class="card-note">2026.2.9 기준 공식 수치</div>
+    </div>
+  </div>
+
+  <div class="chart-row">
+    <div class="chart-box">
+      <h2>유입 경로별 비율 (추정)</h2>
+      <canvas id="trafficPie" width="400" height="400"></canvas>
+    </div>
+    <div class="chart-box">
+      <h2>유입 경로 상세</h2>
+      <canvas id="trafficBar" width="400" height="400"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-row">
+    <div class="chart-box full-width">
+      <h2>네이버 키워드별 콘텐츠 볼륨 (블로그 게시물 수)</h2>
+      <canvas id="keywordBar" width="800" height="300"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-row">
+    <div class="chart-box full-width">
+      <h2>유입 경로 상세 분석</h2>
+      <table>
+        <tr><th>유입경로</th><th>비율</th><th>추정 MAU</th><th>설명</th><th>강도</th></tr>
+        <tr><td>네이버 검색 (오가닉)</td><td>35%</td><td>~70,000</td><td>결혼정보회사, 듀오, 결정사 등 자연검색</td><td><span class="tag tag-high">핵심</span></td></tr>
+        <tr><td>네이버 검색광고 (CPC)</td><td>25%</td><td>~50,000</td><td>파워링크 상위노출, 결혼정보회사/결정사 주요 KW</td><td><span class="tag tag-high">핵심</span></td></tr>
+        <tr><td>직접 유입 (Direct)</td><td>15%</td><td>~30,000</td><td>duo.co.kr 직접입력, 브랜드 인지도</td><td><span class="tag tag-mid">중요</span></td></tr>
+        <tr><td>유튜브 / SNS</td><td>10%</td><td>~20,000</td><td>유튜브 14만 구독, 슈카월드/김대호 콜라보</td><td><span class="tag tag-mid">중요</span></td></tr>
+        <tr><td>구글 검색</td><td>5%</td><td>~10,000</td><td>구글 자연검색 유입</td><td><span class="tag tag-low">보조</span></td></tr>
+        <tr><td>블로그/카페 레퍼럴</td><td>5%</td><td>~10,000</td><td>블로그 후기, 카페 커뮤니티 링크</td><td><span class="tag tag-low">보조</span></td></tr>
+        <tr><td>뉴스/PR</td><td>3%</td><td>~6,000</td><td>보도자료, 뉴스 기사 (주 2-3건 발행)</td><td><span class="tag tag-low">보조</span></td></tr>
+        <tr><td>기타 (디스플레이 등)</td><td>2%</td><td>~4,000</td><td>배너광고, 기타 레퍼럴</td><td><span class="tag tag-low">보조</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="chart-row">
+    <div class="chart-box">
+      <h2>마케팅 채널 현황</h2>
+      <table>
+        <tr><th>채널</th><th>현황</th></tr>
+        <tr><td>네이버 파워링크</td><td><span class="badge">집행중</span> 주요 KW 상위 3위</td></tr>
+        <tr><td>네이버 브랜드검색</td><td><span class="badge">집행중</span> '듀오' 검색 시 노출</td></tr>
+        <tr><td>네이버 예약</td><td><span class="badge">운영중</span> 상담 예약 연동</td></tr>
+        <tr><td>네이버 톡톡</td><td><span class="badge">운영중</span> 실시간 상담</td></tr>
+        <tr><td>유튜브</td><td>구독 14만 / 최고 202만뷰</td></tr>
+        <tr><td>TV 광고</td><td>배우 이시원 모델 기용</td></tr>
+        <tr><td>전국 지사 12곳</td><td>오프라인 상담 유입</td></tr>
+      </table>
+    </div>
+    <div class="chart-box">
+      <h2>주요 경쟁사</h2>
+      <table>
+        <tr><th>업체</th><th>특징</th></tr>
+        <tr><td>가연</td><td>전국 다지점, 가격 경쟁력</td></tr>
+        <tr><td>제이노블</td><td>46년 전통, PDCA 매칭</td></tr>
+        <tr><td>노블리에</td><td>나솔 28기 출연, 4만 회원</td></tr>
+        <tr><td>퍼플스</td><td>상류층 특화, 럭셔리 파티</td></tr>
+        <tr><td>엔노블</td><td>SKY 동문회 제휴, VVIP</td></tr>
+        <tr><td>노블레스수현</td><td>피해접수 0%, 5성급 맞선</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <h3>데이터 산출 근거 및 한계</h3>
+    <p>
+      본 리포트는 duo.co.kr의 내부 애널리틱스가 아닌 <strong>공개 데이터 기반 추정치</strong>입니다.<br>
+      - 네이버 검색 API로 키워드별 블로그 콘텐츠 볼륨 측정<br>
+      - 네이버 검색 결과 페이지에서 광고 집행 현황 직접 확인<br>
+      - 유튜브 공식 채널 구독자/조회수 (뉴스 기사 기반)<br>
+      - duo.co.kr 공식 사이트 공개 데이터 (회원수, 성혼수)<br>
+      - 업종 평균 트래픽 패턴 및 경쟁사 비교 기반 추정<br><br>
+      정확한 DAU/MAU는 Google Analytics 또는 SimilarWeb Pro 구독으로 확인 가능합니다.
+    </p>
+  </div>
+</div>
+
+<script>
+// 유입 경로 파이차트
+new Chart(document.getElementById('trafficPie'), {
+  type: 'doughnut',
+  data: {
+    labels: ['네이버 검색(오가닉) 35%', '네이버 검색광고 25%', '직접유입 15%', '유튜브/SNS 10%', '구글 검색 5%', '블로그/카페 5%', '뉴스/PR 3%', '기타 2%'],
+    datasets: [{
+      data: [35, 25, 15, 10, 5, 5, 3, 2],
+      backgroundColor: ['#6366f1','#8b5cf6','#a78bfa','#c4b5fd','#22c55e','#facc15','#f97316','#64748b'],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { color: '#aaa', font: { size: 11 }, padding: 12 } }
+    }
+  }
+});
+
+// 유입 경로 바차트
+new Chart(document.getElementById('trafficBar'), {
+  type: 'bar',
+  data: {
+    labels: ['네이버\n검색', '네이버\n광고', '직접\n유입', '유튜브\nSNS', '구글\n검색', '블로그\n카페', '뉴스\nPR', '기타'],
+    datasets: [{
+      label: '추정 비율 (%)',
+      data: [35, 25, 15, 10, 5, 5, 3, 2],
+      backgroundColor: ['#6366f1','#8b5cf6','#a78bfa','#c4b5fd','#22c55e','#facc15','#f97316','#64748b'],
+      borderRadius: 6
+    }]
+  },
+  options: {
+    responsive: true,
+    indexAxis: 'y',
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { color: '#2a2d37' }, ticks: { color: '#888' } },
+      y: { grid: { display: false }, ticks: { color: '#ccc', font: { size: 12 } } }
+    }
+  }
+});
+
+// 키워드 콘텐츠 볼륨
+new Chart(document.getElementById('keywordBar'), {
+  type: 'bar',
+  data: {
+    labels: ['결혼정보회사\n추천', '결정사', '결혼정보회사\n비용', '결혼정보회사\n후기', '결혼정보회사\n가입비', '결정사\n추천', '결혼정보회사\n가격', '결혼정보회사\n순위', '결정사\n비용', '결정사\n후기', '듀오\n결혼정보회사', '듀오\n가입비'],
+    datasets: [{
+      label: '네이버 블로그 게시물 수',
+      data: [46556, 44501, 33843, 24270, 23137, 16429, 15735, 12619, 11779, 10708, 9810, 1685],
+      backgroundColor: '#6366f1',
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { display: false }, ticks: { color: '#aaa', font: { size: 10 } } },
+      y: { grid: { color: '#2a2d37' }, ticks: { color: '#888' } }
+    }
+  }
+});
+</script>
+</body>
+</html>

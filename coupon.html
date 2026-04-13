@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body { margin: 0; padding: 40px; background: #f5f5f5; display: flex; justify-content: center; }
+.coupon {
+  width: 380px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  position: relative;
+}
+.coupon-header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: white;
+  padding: 30px 28px 24px;
+  text-align: center;
+}
+.coupon-badge {
+  display: inline-block;
+  background: #e94560;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+.coupon-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 6px;
+  letter-spacing: -0.5px;
+}
+.coupon-subtitle {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  margin: 0;
+}
+.coupon-divider {
+  position: relative;
+  height: 20px;
+  background: white;
+}
+.coupon-divider::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background: #f5f5f5;
+  border-radius: 50%;
+}
+.coupon-divider::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background: #f5f5f5;
+  border-radius: 50%;
+}
+.coupon-divider-line {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  right: 30px;
+  border-top: 2px dashed #e0e0e0;
+}
+.coupon-body {
+  padding: 16px 28px 28px;
+}
+.coupon-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.coupon-info:last-of-type {
+  border-bottom: none;
+  margin-bottom: 20px;
+}
+.coupon-label {
+  font-size: 12px;
+  color: #999;
+  font-weight: 600;
+}
+.coupon-value {
+  font-size: 13px;
+  color: #333;
+  font-weight: 700;
+}
+.coupon-footer {
+  background: #e94560;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.coupon-note {
+  text-align: center;
+  font-size: 10px;
+  color: #bbb;
+  margin-top: 14px;
+}
+.plane-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+<div class="coupon">
+  <div class="coupon-header">
+    <div class="plane-icon">✈️</div>
+    <div class="coupon-badge">VIP ONLY</div>
+    <h1 class="coupon-title">인천공항 픽업서비스</h1>
+    <p class="coupon-subtitle">PREMIUM PICKUP 1회권</p>
+  </div>
+  <div class="coupon-divider">
+    <div class="coupon-divider-line"></div>
+  </div>
+  <div class="coupon-body">
+    <div class="coupon-info">
+      <span class="coupon-label">서비스</span>
+      <span class="coupon-value">공항 도착 → 목적지 직행</span>
+    </div>
+    <div class="coupon-info">
+      <span class="coupon-label">유효기간</span>
+      <span class="coupon-value">~ 2026.04.10</span>
+    </div>
+    <div class="coupon-info">
+      <span class="coupon-label">이용방법</span>
+      <span class="coupon-value">도착 시간 알려주시면 출동</span>
+    </div>
+    <div class="coupon-info">
+      <span class="coupon-label">특별혜택</span>
+      <span class="coupon-value">탑승 후 맛집 직행 가능 🍽️</span>
+    </div>
+    <div class="coupon-footer">사용하기</div>
+    <div class="coupon-note">※ 본 쿠폰은 VIP 고객님께만 발급됩니다<br>교환 및 환불 불가 · 양도 불가</div>
+  </div>
+</div>
+</body>
+</html>

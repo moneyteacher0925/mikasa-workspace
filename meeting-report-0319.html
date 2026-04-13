@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8">
+<style>
+@page{size:A4;margin:20mm}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:10pt;line-height:1.6;color:#222;padding:20mm}
+h1{font-size:16pt;text-align:center;margin-bottom:2px}
+.subtitle{text-align:center;font-size:9pt;color:#777;margin-bottom:20px}
+h2{font-size:11.5pt;background:#1a1a2e;color:#fff;padding:5px 12px;margin:16px 0 8px;border-radius:4px}
+table{width:100%;border-collapse:collapse;margin-bottom:14px;font-size:9.5pt}
+th,td{border:1px solid #ccc;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#f4f4f8;font-weight:600;width:28%}
+.priority{display:inline-block;padding:1px 8px;border-radius:10px;font-size:8pt;font-weight:700;color:#fff}
+.p-high{background:#e74c3c}
+.p-mid{background:#e67e22}
+.p-low{background:#3498db}
+.status{font-size:8.5pt;color:#888}
+.cb{width:13px;height:13px;border:1.5px solid #555;border-radius:2px;display:inline-block;vertical-align:middle;margin-right:5px}
+.note{background:#f9f9f2;border:1px solid #ddd;border-radius:4px;padding:8px 12px;margin:8px 0;font-size:9pt}
+</style></head><body>
+
+<h1>미팅 리포트</h1>
+<p class="subtitle">마케팅해줘 사이트 개발 — 천주원 개발자 × 진격의마케팅 대표</p>
+
+<h2>미팅 개요</h2>
+<table>
+<tr><th>일시</th><td>2026.03.19 (목) 17:00</td></tr>
+<tr><th>방식</th><td>구글밋 (온라인)</td></tr>
+<tr><th>참석자</th><td>천주원 (개발자) / 권에렌 (진격의마케팅 대표)</td></tr>
+<tr><th>안건</th><td>마케팅해줘 (attackmarketing.cafe24.com) 사이트 기능 개선</td></tr>
+</table>
+
+<h2>논의 사항 및 액션 아이템</h2>
+<table>
+<tr><th style="width:25px">#</th><th style="width:45%">액션 아이템</th><th style="width:80px">우선순위</th><th style="width:80px">마감</th><th style="width:25px">✓</th></tr>
+
+<tr>
+<td>1</td>
+<td><strong>포인트 시스템 도입</strong><br>메인페이지에 포인트 표시. 디자이너님과 바로 적용.</td>
+<td><span class="priority p-high">높음</span></td>
+<td>즉시</td>
+<td><div class="cb"></div></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><strong>소셜 로그인 추가</strong><br>카카오 로그인 + 네이버 로그인 연동</td>
+<td><span class="priority p-high">높음</span></td>
+<td>이번주 (3/23)</td>
+<td><div class="cb"></div></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><strong>등급별 차등 단가</strong><br>회원 등급에 따라 상품 단가 다르게 노출. 등급별 일괄 % 할인 설정 기능.</td>
+<td><span class="priority p-high">높음</span></td>
+<td>협의 중</td>
+<td><div class="cb"></div></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><strong>마이페이지 적립금 표시</strong><br>마이페이지에서 현재 적립금 잔액 확인 가능하도록</td>
+<td><span class="priority p-mid">중간</span></td>
+<td>협의 중</td>
+<td><div class="cb"></div></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><strong>서비스 카테고리 게시글 전환</strong><br>마케팅대행 / 전문직마케팅 / 1:1마케팅 → 게시글 형태로 변경 (후기게시판 형식).<br>
+<span class="status">⚠️ 후기게시판에서는 구현 불가 → 노션 또는 구글폼으로 외부 연동 검토</span></td>
+<td><span class="priority p-mid">중간</span></td>
+<td>검토 후 결정</td>
+<td><div class="cb"></div></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><strong>바이럴마케팅 상품 — 카페 URL 단독 추가</strong><br>상품페이지에서 바이럴마케팅 상품 추가 시 카페 URL이 단독으로 정상 등록되는지 확인</td>
+<td><span class="priority p-mid">중간</span></td>
+<td>확인 필요</td>
+<td><div class="cb"></div></td>
+</tr>
+
+</table>
+
+<h2>다음 단계</h2>
+<div class="note">
+<div class="cb"></div> 포인트 시스템 — 디자이너와 즉시 적용 착수<br>
+<div class="cb"></div> 소셜 로그인 — 이번 주말(3/23)까지 카카오/네이버 연동 완료<br>
+<div class="cb"></div> 등급별 단가 / 적립금 표시 — 개발 일정 협의 후 확정<br>
+<div class="cb"></div> 게시글 전환 — 노션 or 구글폼 외부 연동 방안 검토<br>
+<div class="cb"></div> 카페 URL 단독 등록 — QA 확인 후 결과 공유
+</div>
+
+<p style="margin-top:24px;font-size:8.5pt;color:#999;text-align:center">
+작성: 미카사 | 2026.03.19
+</p>
+
+</body></html>

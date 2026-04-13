@@ -1,0 +1,425 @@
+[
+  {
+    "name": "nid_buk",
+    "value": "�\u000b=M�\u0016�u�,\f���X\"�f����5;-�\u0007�5_U8NPZGSHUBP2GWS",
+    "domain": ".nid.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "expires": 1805451231
+  },
+  {
+    "name": "ASID",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����dc4a5be30000019c517e08660000001d",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "expires": 1805453740
+  },
+  {
+    "name": "_fwb",
+    "value": "��\u0003_C:�\u000b�{�Y;�ܟ���d*�A��,v�\u000b\u0004c121MNVhs8GTJfe636ftEjaD.1770891231174",
+    "domain": ".developers.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805620474
+  },
+  {
+    "name": "wcs_bt",
+    "value": "\u0011�����%u���{����P�\u001b�.��\u0011%\u00046\b�\u001a�a395c28a8f51174:1771060474",
+    "domain": "developers.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805620474
+  },
+  {
+    "name": "BA_DEVICE",
+    "value": "�i�.0ѝy\u000f�6�A�\u0012���1�ܫ)\u0002����790dd11e-fd13-4935-989f-ed40ad109c69",
+    "domain": ".blog.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805816184
+  },
+  {
+    "name": "_fbp",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����fb.1.1771256271225.180206282498240771",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1779032271
+  },
+  {
+    "name": "wcs_bt",
+    "value": "\u000f\u0012X�%ٸ\u0018\u0005�����\r\u0011M�i��,r���y�4�s_274e148c2f52b:1771256270",
+    "domain": "smartstore.naver.com",
+    "path": "/baoliving",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805816270
+  },
+  {
+    "name": "ncvid",
+    "value": "�2�w'<1�d|\u0010�)�w�1�g�q�t\u0003�����5�#vid#_220.74.91.2270WIS",
+    "domain": ".cafe.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805816611
+  },
+  {
+    "name": "wcs_bt",
+    "value": "\u000f\u0012X�%ٸ\u0018\u0005�����\r\u0011M�i��,r���y�4�s_a2c408c45abf:1771256906",
+    "domain": "smartstore.naver.com",
+    "path": "/maisonfoodlab",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805816906
+  },
+  {
+    "name": "wcs_bt",
+    "value": "\u000f\u0012X�%ٸ\u0018\u0005�����\r\u0011M�i��,r���y�4�s_2654430070ef2:1771256936",
+    "domain": "smartstore.naver.com",
+    "path": "/gardenings",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805816936
+  },
+  {
+    "name": "NIB2",
+    "value": "s�PR�۷q#\u0004�\u0013�l�BO�M\u0015�#������A�(�1aJAWCcZxbbveJy8p",
+    "domain": ".ni.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "expires": 1805817049
+  },
+  {
+    "name": "naver_stock_codeList",
+    "value": ";-�wB֟AAw�����vn8$✅ǤDw�P�a\u0015�230360%7C",
+    "domain": ".finance.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1773987748
+  },
+  {
+    "name": "SHP_BUCKET_ID",
+    "value": "K�k<�\u0012��=�g�Л���)���\u000f|��\u001e\u001e\u000e2\t��1",
+    "domain": ".shopping.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1802936129
+  },
+  {
+    "name": "wcs_bt",
+    "value": "\u000f\u0012X�%ٸ\u0018\u0005�����\r\u0011M�i��,r���y�4�s_2c8468153d5d5:1771400168",
+    "domain": "smartstore.naver.com",
+    "path": "/dj97",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805960168
+  },
+  {
+    "name": "wcs_bt",
+    "value": "\u000f\u0012X�%ٸ\u0018\u0005�����\r\u0011M�i��,r���y�4�s_10a27e01df998:1771400436",
+    "domain": "smartstore.naver.com",
+    "path": "/dj8224988",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805960436
+  },
+  {
+    "name": "_fwb",
+    "value": "J��\u0015�@Ѹ\u001c\u001c�b۠�C�<1l�rxff\fJ�\u001f���233FGWNWa8y1Mg35BgZ7mQn.1770892447837",
+    "domain": ".manage.searchad.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805961677
+  },
+  {
+    "name": "_fwb",
+    "value": "��-J\u0017���?��\u0017)\u000fC�O�^ۺ�\\���\n�l'44UCSVuOCIh5GDVbrqAI7Q.1770892447865",
+    "domain": ".searchad.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805961677
+  },
+  {
+    "name": "wcs_bt",
+    "value": "���uDl:��v�;��3���Α�%\b�d�Y\u0016��2413704dbffb64:1771401677",
+    "domain": "manage.searchad.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805961677
+  },
+  {
+    "name": "NWB",
+    "value": "G����W-�gO,�jnI��T\u0016s�\t�p*\r\n��*��dd62da0a810ffea213dc8a14d68c89f5.1770880946750",
+    "domain": ".wcs.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "expires": 1805962431
+  },
+  {
+    "name": "NWB_LEGACY",
+    "value": "G����W-�gO,�jnI��T\u0016s�\t�p*\r\n��*��dd62da0a810ffea213dc8a14d68c89f5.1770880946750",
+    "domain": ".wcs.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805962431
+  },
+  {
+    "name": "_fwb",
+    "value": "�XE�I\n�\u0013�\u0019X�k�6ɫӣ���;����k7#�169IpjGIonAAL5k1Mk6sxWQ.1771256270840",
+    "domain": ".smartstore.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805962431
+  },
+  {
+    "name": "cto_bundle",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����NEOz0l80UGF6RUllWnI5WnFTQVljN05VRmdDb2FJdU1nVHNMTE5tNDFnS2NhQmVKejhTYTJFWll5SWVtMEw3VVhPMzV6bTJPQ0E0UjdVUDRyRHdqOTl2VTc0WGJzbU55V0VWRk9kbCUyQnVaNkolMkJUUHVaRWc0Q0VhU0hMblJ0TWl1cUFQY1RvS2NvQWVGWG9mb1RweDFwNXlHU1lKJTJCQjhZUUw4cGdrejhWNHc0UVgzYThnY3dIV1A2VEJFNkxPdXM1dmx3STI",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805566431
+  },
+  {
+    "name": "wcs_bt",
+    "value": "\u000f\u0012X�%ٸ\u0018\u0005�����\r\u0011M�i��,r���y�4�s_3b7ef6e7fb74:1771402431",
+    "domain": "smartstore.naver.com",
+    "path": "/gardenit_official",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1805962431
+  },
+  {
+    "name": "NAC",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����XKEHB8gjkJDy",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "expires": 1807573244
+  },
+  {
+    "name": "NACT",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����1",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1773099644
+  },
+  {
+    "name": "NM_srt_lounge",
+    "value": "�Q���\u0001�\u000b�\f�\u0004�*uW8�b�\u001e\u000bD��\u0005Y�j��1",
+    "domain": "www.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1773099644
+  },
+  {
+    "name": "PLACE_LANGUAGE",
+    "value": "�S\u0006���\u00127(i��Z��>OK\u0012�\u0007�b�\r�N��b\u0017ko",
+    "domain": ".place.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 0
+  },
+  {
+    "name": "PM_CK_loc",
+    "value": "�Q���\u0001�\u000b�\f�\u0004�*uW8�b�\u001e\u000bD��\u0005Y�j��bd09d80245d9082f3a1a2178ea68f40eac7c868a96bce45c3a11048652dceec4",
+    "domain": "www.naver.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": false,
+    "expires": 1773099644
+  },
+  {
+    "name": "page_uid",
+    "value": "�Y�/�\u0003��$b`���\u0014����Z��,�ym����\u001c�8d9dd4ab-f5fc-4d77-ba45-44a41fb3e9e2",
+    "domain": "map.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 0
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "�Y�/�\u0003��$b`���\u0014����Z��,�ym����\u001c�83F01A242E5CD7B71BF9CBE36EC4B1B7.jvm1",
+    "domain": "map.naver.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": false,
+    "expires": 0
+  },
+  {
+    "name": "NID_JST",
+    "value": "�\u000b=M�\u0016�u�,\f���X\"�f����5;-�\u0007�5_U837dEAW07sk4wk/Oqj9dZAZAxxFrkIXaXK5qnZ0kvd+Nrod6bqTsDUJsTP06Mhmhvb+5+CQ7UEIz9WMS+74ij/Cnb4F4NfklOW0UW78n9ZefS1+R201pM6yzZzKd/36vI84DCyc+RN0g8Kg39mRKr4DbC5H0d5Q5smhIlfq86b4s=",
+    "domain": ".nid.naver.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true,
+    "expires": 1790293296
+  },
+  {
+    "name": "nid_slevel",
+    "value": "�\u000b=M�\u0016�u�,\f���X\"�f����5;-�\u0007�5_U81",
+    "domain": ".nid.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1804549296
+  },
+  {
+    "name": "NID_AUT",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����DkPDbF2RNGX+tfbPjAEeuvwryklcrfASHOuj69qV2F8X2osUEnj3G1bwmGv9xG6W",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true,
+    "expires": 0
+  },
+  {
+    "name": "NID_SAUTO",
+    "value": "�\u000b=M�\u0016�u�,\f���X\"�f����5;-�\u0007�5_U8JNXsaYnBcrzoFWdkvBDW3V3RJqEk0CWikTcWI/eHTXA4XOGu0IvsjtIWHi+otRXH",
+    "domain": ".nid.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1775605355
+  },
+  {
+    "name": "NM_srt_chzzk",
+    "value": "�Q���\u0001�\u000b�\f�\u0004�*uW8�b�\u001e\u000bD��\u0005Y�j��1",
+    "domain": "www.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 1773099779
+  },
+  {
+    "name": "nid_inf",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����1144016705",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 0
+  },
+  {
+    "name": "NMUSER",
+    "value": "�=[SB�kTr���l3�PD�\u0010\u0013�s�~>'�f:�udnlKqEwaqbsFxUqaAtXb4CvMrRZWAuZaquXFqKmKxKqFxEsFxuZKAnmaqns3xndaxU9KAKsWNknWAnDKxEs6xRaaZnla9vstoRVa9vsadUsaqROW9e7EoRpadUsawlGW430DVd974lR74lC+4kZ74FTWLm/axgmaXF0Mre5pzJZDL9GW430DVd974lR74lC+4kZ74FTWLm/axgmam==",
+    "domain": "mail.naver.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true,
+    "expires": 0
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "�Q���\u0001�\u000b�\f�\u0004�*uW8�b�\u001e\u000bD��\u0005Y�j��97336FECCC7F0D17803D6A1AA35C9772",
+    "domain": "www.naver.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": false,
+    "expires": 0
+  },
+  {
+    "name": "ncu",
+    "value": "�2�w'<1�d|\u0010�)�w�1�g�q�t\u0003�����5�9fb05b756e3d4ca38b1976617aac1870c4c669e8abd038",
+    "domain": ".cafe.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 0
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "��?\u001c~���9��\u001a������M��(�\f\u001c#��Vv�B8E11A556311D996D21278E45562A33B",
+    "domain": "cafe.naver.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": false,
+    "expires": 0
+  },
+  {
+    "name": "NID_SES",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����AAABy+89+NexiHK9T0Msr+DyjZLC5GnETBqF6RQHSjPHGVD9kcJRg6tj3mOPdi7XkSU83KgUcvlL1DL0jwv8/8eWEeso0a1V75a8jVtEyN1ah/2gf9UJzfNQApdTMnyxOBXnKKOp1/wCOkqbT/hGtxR63m6FYrtGnmi34EblAMHhP/DnS98NRA1ZZqc5YKlry7KZnh0LXHbVm9TBnlbxU4HDqcf2cDsE4vbEVmy0k3WHn5J/U+yw7pvPVe6eg8qi+/W9UZEFX0+qNoTzimjpRSza3i5e36k/LcoOTk3uh1hFR5vyj3eM4uzr61l4yQrSOloUJw09eNm4JYzBcw0eSJBeY0ayrevLlHuRXIEeK7VXPzzpmcOB1FFyEfHjwC8loY2TUdSuJbb7t2G0VaG4umQ2SfqD79OVleESC4ZqB0/mRrmJSgkXESAPLpIOcmsXLm0GuRCZ65efj3pAvjnoZJZZJH8Ot2QaxQseqoE7JD3x5Bl6FJ07e0koaCzFwbpTE/qMIBYqRcx5DFBfpx4LFYfp4QoazKmIfFKOaZPjabb89x9a9p+heyplfHMff6Uk4YVditmhrvSy/P4suyQB1PU8jddCkRNBpJir8bUWk8IhdNZP",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "expires": 0
+  },
+  {
+    "name": "nci4",
+    "value": "�2�w'<1�d|\u0010�)�w�1�g�q�t\u0003�����5�f6c220091c533f88d33d7a6d609ee39632658e722166914dba5063930c1f479f3d830e839d42b480981335e40ff6247eafafa283745b2f0969af0ba56b7ce11149474a6d4c7d3041406742735248587b5f612b5d5473566716676a4a6e5f1c6a654178496d757c5b7e4f0d0d0a0f0873767203002702337978096567670d7e610e736e10",
+    "domain": ".cafe.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 0
+  },
+  {
+    "name": "ncmc4",
+    "value": "�2�w'<1�d|\u0010�)�w�1�g�q�t\u0003�����5�88bc5e77622d41f6ad4304131ef494e1461cfb070f58cb18c2202dcb7c51947b84438049abb1107374e6936be345f80ef7f7ecda291e57585ad077afc0",
+    "domain": ".cafe.naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 0
+  },
+  {
+    "name": "page_uid",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����jjGdZsqX5EzcgP6yb2G-291952",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": false,
+    "expires": 0
+  },
+  {
+    "name": "BUC",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����Ed7pD8GAUwNtRqb-mArEkeQhieaMd1FO0m6U4joqK70=",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true,
+    "expires": 1807577220
+  },
+  {
+    "name": "NNB",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����NPZGSHUBP2GWS",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "expires": 1807577220
+  },
+  {
+    "name": "SRT30",
+    "value": "�w�u�z\u0011@\u0018\u0016�(��\u0011���Y\f��A�\u001b����1773013244",
+    "domain": ".naver.com",
+    "path": "/",
+    "httpOnly": false,
+    "secure": true,
+    "expires": 1773019020
+  }
+]
