@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { size: A4; margin: 15mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; color: #1a1a1a; font-size: 11px; line-height: 1.5; }
+  
+  .cover { page-break-after: always; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center; background: linear-gradient(135deg, #0f4c75 0%, #1b262c 100%); color: white; }
+  .cover h1 { font-size: 36px; font-weight: 800; margin-bottom: 8px; letter-spacing: -1px; }
+  .cover .subtitle { font-size: 16px; color: #bbe1fa; margin-bottom: 40px; }
+  .cover .company { font-size: 14px; color: rgba(255,255,255,0.6); margin-top: 60px; }
+  .cover .logo-icon { font-size: 60px; margin-bottom: 20px; }
+  
+  .page { page-break-after: always; padding: 10px 0; }
+  .page:last-child { page-break-after: avoid; }
+  
+  h2 { font-size: 18px; font-weight: 700; color: #0f4c75; border-bottom: 3px solid #0f4c75; padding-bottom: 6px; margin: 20px 0 12px 0; }
+  h3 { font-size: 13px; font-weight: 700; color: #3282b8; margin: 14px 0 8px 0; }
+  
+  .principle-box { background: #f0f7ff; border-left: 4px solid #0f4c75; padding: 12px 16px; margin: 10px 0 16px 0; border-radius: 0 8px 8px 0; }
+  .principle-box li { margin: 4px 0; padding-left: 4px; list-style: none; }
+  .principle-box li::before { content: "✦ "; color: #0f4c75; font-weight: bold; }
+  
+  .warning-box { background: #fff8f0; border-left: 4px solid #e67e22; padding: 12px 16px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+  .warning-box .title { font-weight: 700; color: #e67e22; margin-bottom: 4px; }
+  .warning-box li { margin: 3px 0; list-style: none; padding-left: 4px; }
+  .warning-box li::before { content: "⚠ "; }
+  
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 16px 0; font-size: 10.5px; }
+  th { background: #0f4c75; color: white; padding: 8px 6px; text-align: center; font-weight: 600; }
+  td { padding: 7px 6px; border-bottom: 1px solid #e0e0e0; }
+  tr:nth-child(even) { background: #f8fbff; }
+  .col-num { width: 36px; text-align: center; }
+  .col-item { width: 140px; }
+  
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 9px; font-weight: 700; margin-left: 6px; }
+  .badge-daily { background: #0f4c75; color: white; }
+  .badge-weekly { background: #3282b8; color: white; }
+  .badge-monthly { background: #bbe1fa; color: #0f4c75; }
+  
+  .time-box { display: inline-block; background: #eaf6ff; border: 1px solid #3282b8; border-radius: 6px; padding: 4px 12px; font-weight: 700; color: #0f4c75; margin: 4px 0; }
+  
+  .section-icon { font-size: 20px; vertical-align: middle; margin-right: 4px; }
+  
+  .checklist-table th { font-size: 9.5px; padding: 6px 3px; }
+  .checklist-table td { padding: 10px 3px; text-align: center; border: 1px solid #d0d0d0; }
+  .checklist-table td:first-child { width: 40px; font-weight: 600; }
+  .checklist-table td:last-child, .checklist-table td:nth-last-child(2) { text-align: left; padding-left: 6px; }
+  .check-cell { width: 50px; }
+  
+  .supply-table td:nth-child(2) { color: #999; font-style: italic; }
+  
+  .footer { text-align: center; color: #999; font-size: 9px; margin-top: 30px; padding-top: 10px; border-top: 1px solid #eee; }
+  
+  .time-summary { display: flex; gap: 12px; flex-wrap: wrap; margin: 10px 0; }
+  .time-card { flex: 1; min-width: 100px; background: #f8fbff; border: 1px solid #d4e6f1; border-radius: 8px; padding: 10px; text-align: center; }
+  .time-card .area { font-size: 10px; color: #666; margin-bottom: 4px; }
+  .time-card .mins { font-size: 20px; font-weight: 800; color: #0f4c75; }
+  .time-card .unit { font-size: 9px; color: #999; }
+</style>
+</head>
+<body>
+
+<!-- 표지 -->
+<div class="cover">
+  <div class="logo-icon">🧹</div>
+  <h1>청소 가이드 & 체크리스트</h1>
+  <div class="subtitle">구역별 청소 매뉴얼 · 일일/주간 체크리스트</div>
+  <div class="company">가든잇(주) · 2026년 4월</div>
+</div>
+
+<!-- 페이지 1: 기본 원칙 + 소요시간 -->
+<div class="page">
+  <h2><span class="section-icon">📋</span> 기본 원칙</h2>
+  <div class="principle-box">
+    <ul>
+      <li><strong>청소 순서:</strong> 내부 화장실 → 외부 화장실 → 휴게실 → 사무실 (오염도 높은 곳 먼저)</li>
+      <li><strong>고무장갑 착용 필수</strong> (특히 화장실)</li>
+      <li>구역별 걸레/도구 <strong>분리 사용</strong> (화장실용 ≠ 사무실용)</li>
+      <li>소모품 부족 시 <strong>아르민 실장님께 즉시 보고</strong></li>
+    </ul>
+  </div>
+
+  <h2><span class="section-icon">⏱</span> 예상 소요 시간</h2>
+  <div class="time-summary">
+    <div class="time-card">
+      <div class="area">내부 화장실</div>
+      <div class="mins">20</div>
+      <div class="unit">분</div>
+    </div>
+    <div class="time-card">
+      <div class="area">외부 화장실</div>
+      <div class="mins">20</div>
+      <div class="unit">분</div>
+    </div>
+    <div class="time-card">
+      <div class="area">휴게실</div>
+      <div class="mins">15</div>
+      <div class="unit">분</div>
+    </div>
+    <div class="time-card">
+      <div class="area">사무실</div>
+      <div class="mins">15</div>
+      <div class="unit">분</div>
+    </div>
+    <div class="time-card" style="background:#0f4c75; border-color:#0f4c75;">
+      <div class="area" style="color:#bbe1fa;">총 소요</div>
+      <div class="mins" style="color:white;">70</div>
+      <div class="unit" style="color:#bbe1fa;">분 (약 1시간 10분)</div>
+    </div>
+  </div>
+
+  <h2><span class="section-icon">📦</span> 소모품 보관 위치</h2>
+  <table class="supply-table">
+    <tr><th>품목</th><th>보관 위치</th></tr>
+    <tr><td>화장실 세정제</td><td>(기입 필요)</td></tr>
+    <tr><td>유리세정제</td><td>(기입 필요)</td></tr>
+    <tr><td>걸레 / 행주</td><td>(기입 필요)</td></tr>
+    <tr><td>쓰레기봉투</td><td>(기입 필요)</td></tr>
+    <tr><td>휴지 / 핸드타올</td><td>(기입 필요)</td></tr>
+    <tr><td>고무장갑</td><td>(기입 필요)</td></tr>
+  </table>
+
+  <h2><span class="section-icon">🔄</span> 청소 주기 요약</h2>
+  <table>
+    <tr><th>주기</th><th>항목</th></tr>
+    <tr><td><span class="badge badge-daily">매일</span></td><td>바닥, 변기, 세면대, 거울, 쓰레기통, 소모품 보충, 문 손잡이</td></tr>
+    <tr><td><span class="badge badge-weekly">주 1회</span></td><td>환풍기 외부, 냉장고 외부, 창문턱/선반, 공용 장비</td></tr>
+    <tr><td><span class="badge badge-monthly">월 1회</span></td><td>환풍기 필터, 냉장고 내부, 에어컨 필터, 구석 먼지</td></tr>
+  </table>
+</div>
+
+<!-- 페이지 2: 내부 화장실 + 외부 화장실 -->
+<div class="page">
+  <h2><span class="section-icon">🚻</span> 1. 내부 화장실 <span class="badge badge-daily">매일</span></h2>
+  <table>
+    <tr><th class="col-num">순서</th><th class="col-item">항목</th><th>방법</th></tr>
+    <tr><td class="col-num">1</td><td>변기 내부</td><td>변기 세정제 도포 → 솔로 꼼꼼히 문지르기 → 물 내리기</td></tr>
+    <tr><td class="col-num">2</td><td>변기 외부 / 시트</td><td>세정제 + 걸레로 닦기 (시트 양면 모두)</td></tr>
+    <tr><td class="col-num">3</td><td>세면대</td><td>세정제로 물때 제거 + 수전 닦기 + 물기 제거</td></tr>
+    <tr><td class="col-num">4</td><td>거울</td><td>유리세정제 분사 → 마른 천으로 결 없이 닦기</td></tr>
+    <tr><td class="col-num">5</td><td>바닥</td><td>쓸기 → 물걸레 (배수구 이물질 제거)</td></tr>
+    <tr><td class="col-num">6</td><td>쓰레기통</td><td>비우기 + 봉투 교체</td></tr>
+    <tr><td class="col-num">7</td><td>소모품 보충</td><td>휴지, 핸드타올, 비누 잔량 확인 → 보충</td></tr>
+    <tr><td class="col-num">8</td><td>문 손잡이</td><td>세정제로 닦기</td></tr>
+  </table>
+
+  <h3>주 1회</h3>
+  <table>
+    <tr><td>환풍기/환기팬 외부 닦기</td></tr>
+    <tr><td>타일 줄눈 곰팡이 확인 → 발견 시 보고</td></tr>
+  </table>
+
+  <h3>월 1회</h3>
+  <table>
+    <tr><td>환풍기 필터 분리 청소</td></tr>
+    <tr><td>배수구 집중 청소 (세정제 + 뜨거운 물)</td></tr>
+  </table>
+
+  <h2><span class="section-icon">🚾</span> 2. 외부 화장실 <span class="badge badge-daily">매일</span></h2>
+  <table>
+    <tr><th class="col-num">순서</th><th class="col-item">항목</th><th>방법</th></tr>
+    <tr><td class="col-num">1</td><td>변기 내부</td><td>변기 세정제 + 솔</td></tr>
+    <tr><td class="col-num">2</td><td>변기 외부 / 시트</td><td>세정제 + 걸레</td></tr>
+    <tr><td class="col-num">3</td><td>세면대</td><td>세정제 + 물기 닦기</td></tr>
+    <tr><td class="col-num">4</td><td>거울</td><td>유리세정제 + 마른 천</td></tr>
+    <tr><td class="col-num">5</td><td>바닥</td><td>쓸기 → 물걸레</td></tr>
+    <tr><td class="col-num">6</td><td>배수구</td><td>머리카락/이물질 제거</td></tr>
+    <tr><td class="col-num">7</td><td>쓰레기통</td><td>비우기 + 봉투 교체</td></tr>
+    <tr><td class="col-num">8</td><td>소모품 보충</td><td>휴지, 핸드타올, 비누</td></tr>
+    <tr><td class="col-num">9</td><td>문 손잡이</td><td>세정제로 닦기</td></tr>
+  </table>
+  <p style="color:#666; font-size:10px; margin-top:6px;">※ 주 1회 / 월 1회 항목은 내부 화장실과 동일</p>
+</div>
+
+<!-- 페이지 3: 휴게실 + 사무실 -->
+<div class="page">
+  <h2><span class="section-icon">☕</span> 3. 휴게실 <span class="badge badge-daily">매일</span></h2>
+  <table>
+    <tr><th class="col-num">순서</th><th class="col-item">항목</th><th>방법</th></tr>
+    <tr><td class="col-num">1</td><td>식탁 / 의자</td><td>행주로 닦기 (의자 등받이 포함)</td></tr>
+    <tr><td class="col-num">2</td><td>싱크대 / 조리대</td><td>세제 + 수세미 → 물기 완전 제거</td></tr>
+    <tr><td class="col-num">3</td><td>전자레인지</td><td>내/외부 젖은 행주로 닦기 (음식물 찌꺼기 제거)</td></tr>
+    <tr><td class="col-num">4</td><td>정수기 외부</td><td>마른 천으로 닦기</td></tr>
+    <tr><td class="col-num">5</td><td>바닥</td><td>쓸기 → 물걸레</td></tr>
+    <tr><td class="col-num">6</td><td>쓰레기통</td><td>비우기 + 봉투 교체</td></tr>
+    <tr><td class="col-num">7</td><td>분리수거</td><td>정리 / 배출</td></tr>
+  </table>
+
+  <h3>주 1회</h3>
+  <table>
+    <tr><td>냉장고 외부 닦기</td></tr>
+    <tr><td>수납장/선반 먼지 제거</td></tr>
+  </table>
+
+  <h3>월 1회</h3>
+  <table>
+    <tr><td>냉장고 내부 정리 (유통기한 지난 것 폐기)</td></tr>
+  </table>
+
+  <h2><span class="section-icon">🖥</span> 4. 사무실 <span class="badge badge-daily">매일</span></h2>
+  <table>
+    <tr><th class="col-num">순서</th><th class="col-item">항목</th><th>방법</th></tr>
+    <tr><td class="col-num">1</td><td>바닥</td><td>쓸기 → 물걸레 (또는 밀대)</td></tr>
+    <tr><td class="col-num">2</td><td>공용 테이블</td><td>마른 천으로 닦기</td></tr>
+    <tr><td class="col-num">3</td><td>쓰레기통</td><td>비우기 + 봉투 교체</td></tr>
+  </table>
+
+  <div class="warning-box">
+    <div class="title">⚠ 사무실 주의사항</div>
+    <ul>
+      <li>개인 책상 위 <strong>서류/장비 절대 이동 금지</strong></li>
+      <li>개인 책상 상판은 닦지 않음 (본인이 비워둔 경우만)</li>
+      <li>복합기/프린터 — 외부만 닦기 (버튼 부분 주의)</li>
+      <li><strong>모니터 화면 닦지 않기</strong> (전용 클리너 필요)</li>
+    </ul>
+  </div>
+
+  <h3>주 1회</h3>
+  <table>
+    <tr><td>창문턱 / 선반 먼지 제거</td></tr>
+    <tr><td>공용 장비 (복합기, 정수기) 외부 닦기</td></tr>
+    <tr><td>출입문 / 손잡이 닦기</td></tr>
+  </table>
+
+  <h3>월 1회</h3>
+  <table>
+    <tr><td>에어컨 필터 확인 (이상 시 보고)</td></tr>
+    <tr><td>구석 / 책상 뒤 먼지 제거</td></tr>
+  </table>
+</div>
+
+<!-- 페이지 4: 일일 체크리스트 -->
+<div class="page">
+  <h2><span class="section-icon">✅</span> 일일 청소 체크리스트 &nbsp;&nbsp; ______년 ______월</h2>
+  <table class="checklist-table" style="font-size:9.5px;">
+    <tr>
+      <th>날짜</th>
+      <th class="check-cell">내부<br>화장실</th>
+      <th class="check-cell">외부<br>화장실</th>
+      <th class="check-cell">휴게실</th>
+      <th class="check-cell">사무실</th>
+      <th class="check-cell">소모품<br>보충</th>
+      <th style="width:120px;">특이사항</th>
+      <th style="width:60px;">서명</th>
+    </tr>
+    <tr><td>1</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>2</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>3</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>4</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>5</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>6</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>7</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>8</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>9</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>10</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>11</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>12</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>13</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>14</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>15</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>16</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>17</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>18</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>19</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>20</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>21</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>22</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>23</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>24</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>25</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>26</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>27</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>28</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>29</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>30</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>31</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+  </table>
+
+  <h2 style="margin-top:20px;"><span class="section-icon">📅</span> 주간 점검 체크리스트 &nbsp;&nbsp; 매주 ______요일</h2>
+  <table class="checklist-table">
+    <tr>
+      <th>주차</th>
+      <th class="check-cell">환풍기</th>
+      <th class="check-cell">냉장고<br>외부</th>
+      <th class="check-cell">창문턱<br>선반</th>
+      <th class="check-cell">공용장비</th>
+      <th class="check-cell">출입문<br>손잡이</th>
+      <th style="width:140px;">특이사항</th>
+      <th style="width:60px;">서명</th>
+    </tr>
+    <tr><td>1주</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>2주</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>3주</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>4주</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+    <tr><td>5주</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td><td></td></tr>
+  </table>
+
+  <div class="footer">가든잇(주) 청소 가이드 v1.0 · 2026년 4월 · 미카사 제작</div>
+</div>
+
+</body>
+</html>
