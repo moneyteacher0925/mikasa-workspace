@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Noto Sans KR', sans-serif; background: #0a0a0a; color: #e0e0e0; padding: 40px; }
+.container { max-width: 700px; margin: 0 auto; }
+.header { text-align: center; padding: 50px 0 30px; border-bottom: 2px solid #c41e3a; margin-bottom: 40px; }
+.header h1 { font-size: 32px; font-weight: 900; color: #fff; margin-bottom: 8px; }
+.header .sub { font-size: 14px; color: #999; letter-spacing: 2px; }
+.header .badge { display: inline-block; background: #c41e3a; color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 13px; font-weight: 700; margin-top: 12px; }
+.section { margin-bottom: 36px; }
+.section-title { font-size: 18px; font-weight: 700; color: #c41e3a; margin-bottom: 16px; padding-left: 12px; border-left: 4px solid #c41e3a; }
+.card { background: #1a1a1a; border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+.card h3 { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 10px; }
+.card .change { display: flex; align-items: center; margin-bottom: 8px; }
+.card .before { background: #2a1a1a; color: #ff6b6b; padding: 6px 14px; border-radius: 6px; font-size: 13px; text-decoration: line-through; margin-right: 12px; }
+.card .arrow { color: #666; margin-right: 12px; font-size: 18px; }
+.card .after { background: #1a2a1a; color: #51cf66; padding: 6px 14px; border-radius: 6px; font-size: 13px; font-weight: 700; }
+.card p { font-size: 13px; color: #aaa; line-height: 1.8; margin-top: 8px; }
+.card ul { list-style: none; padding: 0; }
+.card ul li { font-size: 13px; color: #ccc; line-height: 2; padding-left: 16px; position: relative; }
+.card ul li::before { content: "→"; position: absolute; left: 0; color: #c41e3a; }
+.structure { display: flex; gap: 12px; margin-top: 12px; }
+.structure-item { flex: 1; background: #222; border-radius: 10px; padding: 16px; text-align: center; }
+.structure-item .num { font-size: 28px; font-weight: 900; color: #c41e3a; }
+.structure-item .label { font-size: 12px; color: #999; margin-top: 4px; }
+.structure-item .desc { font-size: 11px; color: #ccc; margin-top: 8px; line-height: 1.6; }
+.copy-table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+.copy-table th { background: #222; color: #999; font-size: 11px; padding: 10px; text-align: left; font-weight: 500; }
+.copy-table td { padding: 10px; font-size: 12px; border-bottom: 1px solid #222; }
+.copy-table .old { color: #ff6b6b; text-decoration: line-through; }
+.copy-table .new { color: #51cf66; font-weight: 700; }
+.next { background: linear-gradient(135deg, #1a1a2e, #16213e); border-radius: 12px; padding: 24px; margin-top: 20px; }
+.next h3 { color: #4ecdc4; font-size: 15px; margin-bottom: 12px; }
+.next ul li { font-size: 13px; color: #aaa; line-height: 2; padding-left: 16px; position: relative; }
+.next ul li::before { content: "◎"; position: absolute; left: 0; color: #4ecdc4; }
+.footer { text-align: center; padding: 40px 0 20px; color: #555; font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="sub">100원사주 × 진격의 마케팅</div>
+    <h1>1차 수정사항 리포트</h1>
+    <div class="badge">2026.04.15</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">1. 로고 변경</div>
+    <div class="card">
+      <h3>브랜드 로고 리뉴얼</h3>
+      <div class="change">
+        <span class="before">백원사주 1678</span>
+        <span class="arrow">→</span>
+        <span class="after">100원사주 1953</span>
+      </div>
+      <p>숫자 표기가 직관적이고 가격 USP를 바로 전달. 1953은 6.25 직후 시대감으로 브랜딩 스토리 구축 가능.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">2. 카테고리 배너 정리</div>
+    <div class="card">
+      <h3>8개 카테고리 → 삭제 또는 2개 축소</h3>
+      <p>현재: 연애 / 짝사랑 / 궁합 / 재회 / 종합운세 / 취업·진로 / 재물·성공 / 꿈해몽</p>
+      <ul>
+        <li>초기 단계에서 카테고리 나열은 선택장애 유발 → 이탈률 증가</li>
+        <li>상품 수가 늘어나면 추후 복구</li>
+        <li>현재는 히어로 CTA로 직접 유도하는 것이 효과적</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">3. 메인페이지 구조 개편</div>
+    <div class="card">
+      <h3>6개 섹션 → 3개 섹션으로 축소</h3>
+      <div class="structure">
+        <div class="structure-item">
+          <div class="num">01</div>
+          <div class="label">히어로 CTA 배너</div>
+          <div class="desc">브랜드 대표 CTA<br>실시간 구매 숫자<br>누적 이용자 수</div>
+        </div>
+        <div class="structure-item">
+          <div class="num">02</div>
+          <div class="label">오늘의 베스트 사주</div>
+          <div class="desc">인기 상품 1~2개<br>페르소나 캐릭터<br>이용자 수 + 별점</div>
+        </div>
+        <div class="structure-item">
+          <div class="num">03</div>
+          <div class="label">실제 후기</div>
+          <div class="desc">별점 + 연령<br>한줄 후기 5~10개<br>사회적 증거</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">4. 히어로 배너 상세</div>
+    <div class="card">
+      <h3>페르소나 중복 제거 + CTA 강화</h3>
+      <ul>
+        <li>특정 페르소나(희연아씨 등) 넣지 않기 — 상품 상세와 중복</li>
+        <li>분위기 있는 배경 또는 인물 이미지 위에 CTA 2개 배치</li>
+        <li><strong>"지금 100원으로 연애운 확인하기"</strong> 🔥 오늘 132명 구매중</li>
+        <li><strong>"100원으로 나의 재물운 확인하기"</strong> 🔥 오늘 115명 구매중</li>
+        <li>실시간 구매 숫자 반드시 노출 (전환율 핵심 요소)</li>
+        <li>누적 이용자 수 표기: "14,688명이 이미 확인했습니다"</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">5. 카피 수정 제안</div>
+    <div class="card">
+      <table class="copy-table">
+        <tr><th>위치</th><th>현재</th><th>수정안</th></tr>
+        <tr>
+          <td>메인 타이틀</td>
+          <td class="old">딱 100원으로 보는 내 사주팔자</td>
+          <td class="new">커피값도 안 되는 100원으로, 내 인생이 바뀐다면?</td>
+        </tr>
+        <tr>
+          <td>서브 카피</td>
+          <td class="old">(없음)</td>
+          <td class="new">지금까지 14,688명이 확인했습니다</td>
+        </tr>
+        <tr>
+          <td>CTA 버튼</td>
+          <td class="old">(없음)</td>
+          <td class="new">100원에 내 운명 보기 →</td>
+        </tr>
+        <tr>
+          <td>상품 설명</td>
+          <td class="old">끊어질 인연인가 이어질 명운인가</td>
+          <td class="new">그 사람, 돌아올까? 100원이면 알 수 있어.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="next">
+    <h3>📋 2차 수정 예정 항목</h3>
+    <ul>
+      <li>상세페이지 퍼널 (생년월일 입력 → 결제 → 결과)</li>
+      <li>업셀 구조 (결과 후 상세풀이 9,900원 등)</li>
+      <li>결제 흐름 최적화</li>
+      <li>모바일 UI/UX 점검</li>
+    </ul>
+    <p style="margin-top: 12px; font-size: 12px; color: #888;">1차 수정 완료 후 전달주시면 재점검 후 2차 수정사항 전달드리겠습니다.</p>
+  </div>
+
+  <div class="footer">
+    100원사주 × 진격의 마케팅 | 1차 수정 리포트 | 2026.04.15
+  </div>
+</div>
+</body>
+</html>
