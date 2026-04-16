@@ -218,6 +218,11 @@
 4. 가든잇 — 유지만 (당근알바 위임 구조 유지)
 
 
+## OpenClaw 장애 대응 (2026-04-16 확립)
+- 증상: gateway 프로세스 중복 실행 → 충돌 (맥미니 장기 운영 시 좀비 프로세스)
+- 해결: `openclaw gateway stop` → `openclaw gateway --force`
+- pm2는 더 이상 사용 안 함
+
 ## AI 협업 규칙 (2026-04-14 인시던트 이후 확정)
 - 미카사(OpenClaw): 텔레그램 봇, 비서, 리마인드, 기억관리 전담
 - 지크(Antigravity): 코딩, PM, 구글연동, 웹 MVP 전담
