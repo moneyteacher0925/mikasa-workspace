@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>마케터 면접 질문지</title>
+<style>
+  @media print {
+    body { margin: 0; }
+    .page-break { page-break-before: always; }
+    .no-print { display: none; }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; color: #1a1a1a; background: #f5f5f5; padding: 40px 20px; }
+  .container { max-width: 800px; margin: 0 auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 20px rgba(0,0,0,0.08); overflow: hidden; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 40px; text-align: center; }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; }
+  .header p { font-size: 14px; color: rgba(255,255,255,0.6); }
+  .info-bar { display: flex; gap: 20px; padding: 20px 40px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; font-size: 14px; color: #666; }
+  .info-bar .field { flex: 1; }
+  .info-bar .field label { font-weight: 600; color: #333; display: block; margin-bottom: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .info-bar .field .line { border-bottom: 1px solid #ccc; min-height: 24px; }
+  .content { padding: 32px 40px 40px; }
+  .section { margin-bottom: 32px; }
+  .section:last-child { margin-bottom: 0; }
+  .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #1a1a2e; }
+  .section-num { background: #1a1a2e; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+  .section-title { font-size: 18px; font-weight: 700; color: #1a1a2e; }
+  .question { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+  .question:last-child { border-bottom: none; }
+  .q-num { font-size: 13px; font-weight: 700; color: #999; min-width: 24px; padding-top: 1px; }
+  .q-body { flex: 1; }
+  .q-text { font-size: 15px; line-height: 1.6; color: #333; }
+  .q-hint { font-size: 12px; color: #999; margin-top: 4px; }
+  .score-row { display: flex; gap: 6px; margin-top: 8px; align-items: center; }
+  .score-label { font-size: 11px; color: #aaa; margin-right: 4px; }
+  .score-dot { width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid #ccc; }
+  .notes-area { margin-top: 8px; border: 1px dashed #ddd; border-radius: 6px; min-height: 36px; padding: 8px; font-size: 12px; color: #bbb; }
+  .footer { padding: 24px 40px; background: #f8f9fa; border-top: 1px solid #e9ecef; text-align: center; font-size: 12px; color: #999; }
+  .print-btn { position: fixed; bottom: 30px; right: 30px; background: #1a1a2e; color: #fff; border: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+  .print-btn:hover { background: #16213e; }
+</style>
+</head>
+<body>
+
+<button class="print-btn no-print" onclick="window.print()">🖨️ 인쇄하기</button>
+
+<div class="container">
+  <div class="header">
+    <h1>퍼포먼스 마케터 면접 질문지</h1>
+    <p>진격의 마케팅 | 2026.04.24</p>
+  </div>
+
+  <div class="info-bar">
+    <div class="field">
+      <label>지원자명</label>
+      <div class="line"></div>
+    </div>
+    <div class="field">
+      <label>면접일시</label>
+      <div class="line"></div>
+    </div>
+    <div class="field">
+      <label>면접관</label>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- Section 1 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">1</div>
+        <div class="section-title">퍼포먼스 마케팅 역량</div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">01</div>
+        <div class="q-body">
+          <div class="q-text">직접 운영한 광고 캠페인 중 가장 성과가 좋았던 사례를 ROAS/CPA 수치와 함께 설명해주세요.</div>
+          <div class="q-hint">핵심 확인: 수치 기반 사고, 성과 크기</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">02</div>
+        <div class="q-body">
+          <div class="q-text">네이버 SA / 메타 / 구글 Ads 중 가장 자신 있는 채널은? 월 집행 예산 규모와 주요 KPI는?</div>
+          <div class="q-hint">핵심 확인: 채널별 깊이, 예산 규모 경험</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">03</div>
+        <div class="q-body">
+          <div class="q-text">ROAS가 목표 대비 50% 이하로 떨어졌을 때 어떤 순서로 원인을 분석하고 대응하나요?</div>
+          <div class="q-hint">핵심 확인: 문제 해결 프로세스, 논리적 사고</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">04</div>
+        <div class="q-body">
+          <div class="q-text">A/B 테스트 설계 경험이 있나요? 소재, 타겟, 랜딩 중 어디서 가장 큰 개선을 만들었는지?</div>
+          <div class="q-hint">핵심 확인: 테스트 설계력, 변수 통제 이해</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">05</div>
+        <div class="q-body">
+          <div class="q-text">리타겟팅/리마케팅 세그먼트를 어떻게 설계하는지 본인만의 기준이 있다면?</div>
+          <div class="q-hint">핵심 확인: 퍼널 이해, 오디언스 세분화 능력</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">2</div>
+        <div class="section-title">데이터 분석 & 툴</div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">06</div>
+        <div class="q-body">
+          <div class="q-text">GA4 사용 경험 — 이벤트 설정, 전환 추적, 탐색 보고서 중 어디까지 직접 해봤나요?</div>
+          <div class="q-hint">핵심 확인: GA4 실무 깊이 (기본 조회 vs 커스텀 이벤트 설계)</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">07</div>
+        <div class="q-body">
+          <div class="q-text">GTM(Google Tag Manager) 직접 세팅해본 경험이 있나요? 어떤 태그/트리거를 설정했는지 구체적으로.</div>
+          <div class="q-hint">핵심 확인: 트래킹 인프라 구축 능력, 개발 의존도</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">08</div>
+        <div class="q-body">
+          <div class="q-text">UTM 파라미터 설계 규칙이 있다면? 채널/캠페인/소재별 네이밍 컨벤션을 어떻게 잡나요?</div>
+          <div class="q-hint">핵심 확인: 데이터 정합성에 대한 이해</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">09</div>
+        <div class="q-body">
+          <div class="q-text">픽셀/전환 API(CAPI) 설치 경험이 있나요? iOS 14.5 이후 트래킹 이슈에 어떻게 대응했는지?</div>
+          <div class="q-hint">핵심 확인: 메타 광고 기술 이해도, 서버사이드 트래킹</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">10</div>
+        <div class="q-body">
+          <div class="q-text">엑셀/스프레드시트로 광고 데이터 리포트 만들어본 경험 — 피벗, VLOOKUP, 대시보드 수준은?</div>
+          <div class="q-hint">핵심 확인: 리포팅 능력, 데이터 가공 속도</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">3</div>
+        <div class="section-title">AE / 영업 & 커뮤니케이션</div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">11</div>
+        <div class="q-body">
+          <div class="q-text">광고주(클라이언트) 직접 대응 경험이 있나요? 동시에 몇 개 광고주를 담당했는지?</div>
+          <div class="q-hint">핵심 확인: AE 경험 유무, 멀티태스킹 능력</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">12</div>
+        <div class="q-body">
+          <div class="q-text">광고주가 성과에 불만을 표할 때 어떻게 대응하나요? 실제 경험이 있으면 공유해주세요.</div>
+          <div class="q-hint">핵심 확인: 클라이언트 관리, 위기 대응력</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">13</div>
+        <div class="q-body">
+          <div class="q-text">신규 광고주 영업(세일즈)을 직접 해본 적 있나요? 리드 확보부터 계약까지의 프로세스는?</div>
+          <div class="q-hint">핵심 확인: 세일즈 마인드, 비즈니스 개발 능력</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">14</div>
+        <div class="q-body">
+          <div class="q-text">주간/월간 리포트를 광고주에게 어떤 구조로 전달하나요? 핵심 지표와 인사이트 구성 방식은?</div>
+          <div class="q-hint">핵심 확인: 리포팅 퀄리티, 커뮤니케이션 능력</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">4</div>
+        <div class="section-title">콘텐츠 & 바이럴</div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">15</div>
+        <div class="q-body">
+          <div class="q-text">광고 소재(카피/이미지/영상) 직접 제작해본 경험이 있나요? 어떤 툴을 사용하는지?</div>
+          <div class="q-hint">핵심 확인: 소재 제작 자립도, 디자인 툴 활용</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">16</div>
+        <div class="q-body">
+          <div class="q-text">바이럴 마케팅 경험 — 카페, 블로그, 커뮤니티 중 직접 운영하거나 기획해본 채널이 있나요?</div>
+          <div class="q-hint">핵심 확인: 오가닉 트래픽 확보 능력, 진격마케팅 핏</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">17</div>
+        <div class="q-body">
+          <div class="q-text">SEO 경험이 있나요? 키워드 리서치부터 콘텐츠 최적화까지 어떤 프로세스로 진행하는지?</div>
+          <div class="q-hint">핵심 확인: 검색 마케팅 이해도</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">5</div>
+        <div class="section-title">AI 활용 & 성장 마인드</div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">18</div>
+        <div class="q-body">
+          <div class="q-text">업무에 AI 도구(ChatGPT, 이미지 생성, 자동화 등)를 활용해본 경험이 있나요? 구체적으로 어떤 업무에?</div>
+          <div class="q-hint">핵심 확인: AI 리터러시, 효율화 마인드</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">19</div>
+        <div class="q-body">
+          <div class="q-text">최근 6개월 내 새로 배운 마케팅 스킬이나 트렌드가 있다면?</div>
+          <div class="q-hint">핵심 확인: 자기 성장 의지, 트렌드 민감도</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">6</div>
+        <div class="section-title">컬쳐핏 & 조건</div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">20</div>
+        <div class="q-body">
+          <div class="q-text">왜 진격의 마케팅에 지원했나요? 우리 회사에 대해 알아본 게 있다면?</div>
+          <div class="q-hint">핵심 확인: 지원 동기, 사전 리서치 여부</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">21</div>
+        <div class="q-body">
+          <div class="q-text">혼자 기획~실행~분석 전 과정을 돌려야 하는 환경인데, 그런 경험이 있는지? 어떻게 느꼈는지?</div>
+          <div class="q-hint">핵심 확인: 자기주도성, 소규모 조직 적응력</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">22</div>
+        <div class="q-body">
+          <div class="q-text">본인이 가장 약하다고 생각하는 마케팅 영역은? 그걸 어떻게 보완하고 있는지?</div>
+          <div class="q-hint">핵심 확인: 자기 객관화, 성장 방향</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="q-num">23</div>
+        <div class="q-body">
+          <div class="q-text">희망 연봉 / 입사 가능 시기 / 기대하는 성장 방향은?</div>
+          <div class="q-hint">핵심 확인: 조건 확인</div>
+          <div class="score-row"><span class="score-label">평가</span><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div><div class="score-dot"></div></div>
+          <div class="notes-area">메모</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="section" style="margin-top: 40px; padding-top: 24px; border-top: 2px solid #1a1a2e;">
+      <div class="section-header">
+        <div class="section-num">★</div>
+        <div class="section-title">종합 평가</div>
+      </div>
+      <table style="width:100%; border-collapse:collapse; font-size:14px;">
+        <tr style="background:#f8f9fa;">
+          <td style="padding:10px 12px; border:1px solid #e9ecef; font-weight:600; width:40%;">평가 항목</td>
+          <td style="padding:10px 12px; border:1px solid #e9ecef; text-align:center; font-weight:600;">1</td>
+          <td style="padding:10px 12px; border:1px solid #e9ecef; text-align:center; font-weight:600;">2</td>
+          <td style="padding:10px 12px; border:1px solid #e9ecef; text-align:center; font-weight:600;">3</td>
+          <td style="padding:10px 12px; border:1px solid #e9ecef; text-align:center; font-weight:600;">4</td>
+          <td style="padding:10px 12px; border:1px solid #e9ecef; text-align:center; font-weight:600;">5</td>
+        </tr>
+        <tr><td style="padding:10px 12px; border:1px solid #e9ecef;">퍼포먼스 마케팅 역량</td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td></tr>
+        <tr><td style="padding:10px 12px; border:1px solid #e9ecef;">데이터 분석 & 툴</td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td></tr>
+        <tr><td style="padding:10px 12px; border:1px solid #e9ecef;">AE / 영업 커뮤니케이션</td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td></tr>
+        <tr><td style="padding:10px 12px; border:1px solid #e9ecef;">콘텐츠 & 바이럴</td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td></tr>
+        <tr><td style="padding:10px 12px; border:1px solid #e9ecef;">AI 활용 & 성장 마인드</td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td></tr>
+        <tr><td style="padding:10px 12px; border:1px solid #e9ecef;">컬쳐핏</td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td><td style="border:1px solid #e9ecef;"></td></tr>
+        <tr style="background:#f8f9fa; font-weight:600;"><td style="padding:10px 12px; border:1px solid #e9ecef;">채용 추천</td><td colspan="5" style="border:1px solid #e9ecef; padding:10px 12px;">적극 추천 / 추천 / 보류 / 불합격</td></tr>
+      </table>
+      <div class="notes-area" style="margin-top:16px; min-height:80px;">종합 의견</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    진격의 마케팅 — 퍼포먼스 마케터 면접 질문지 | 2026.04.24
+  </div>
+</div>
+
+</body>
+</html>
