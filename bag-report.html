@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>에렌의 백팩 쇼핑 리포트</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Apple SD Gothic Neo', sans-serif; background: #0a0a0a; color: #e0e0e0; padding: 40px 20px; max-width: 800px; margin: 0 auto; }
+  h1 { font-size: 28px; color: #fff; margin-bottom: 6px; }
+  .subtitle { color: #888; font-size: 14px; margin-bottom: 40px; }
+  .section-title { font-size: 20px; color: #fff; margin: 40px 0 20px; padding-bottom: 8px; border-bottom: 1px solid #333; }
+  .brand-card { background: #151515; border-radius: 12px; padding: 24px; margin-bottom: 20px; border: 1px solid #222; }
+  .brand-name { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .brand-origin { font-size: 13px; color: #666; margin-bottom: 12px; }
+  .brand-desc { font-size: 14px; line-height: 1.7; color: #bbb; }
+  .product-card { background: #1a1a1a; border-radius: 12px; padding: 20px; margin-bottom: 16px; border: 1px solid #2a2a2a; }
+  .product-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+  .product-name { font-size: 16px; font-weight: 600; color: #fff; }
+  .product-price { font-size: 16px; font-weight: 700; color: #4ecdc4; }
+  .product-line { font-size: 12px; color: #888; margin-bottom: 10px; }
+  .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .tag { font-size: 11px; padding: 4px 10px; border-radius: 20px; background: #222; color: #aaa; }
+  .tag.best { background: #1a3a2a; color: #4ecdc4; }
+  .tag.warn { background: #3a2a1a; color: #e0a040; }
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 13px; }
+  .pros-cons div { padding: 10px; border-radius: 8px; }
+  .pros { background: #0d1f17; }
+  .cons { background: #1f150d; }
+  .pros span { color: #4ecdc4; }
+  .cons span { color: #e0a040; }
+  .pros li, .cons li { margin: 4px 0; color: #bbb; list-style: none; }
+  .compare-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; }
+  .compare-table th { background: #1a1a1a; color: #888; font-weight: 500; padding: 10px 8px; text-align: center; border-bottom: 1px solid #333; }
+  .compare-table td { padding: 10px 8px; text-align: center; border-bottom: 1px solid #1a1a1a; color: #ccc; }
+  .compare-table tr:hover { background: #151515; }
+  .star { color: #4ecdc4; }
+  .verdict { background: linear-gradient(135deg, #1a1a2e, #16213e); border-radius: 12px; padding: 24px; margin-top: 30px; border: 1px solid #2a2a4a; }
+  .verdict h3 { color: #4ecdc4; margin-bottom: 12px; font-size: 16px; }
+  .verdict p { font-size: 14px; line-height: 1.8; color: #ccc; }
+  .verdict .pick { font-size: 15px; font-weight: 600; color: #fff; margin: 8px 0; }
+  .footer { text-align: center; margin-top: 40px; color: #444; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<h1>백팩 쇼핑 리포트</h1>
+<p class="subtitle">2026.04.27 | 에렌 | 용도: 일상 + 미팅 겸용</p>
+
+<!-- BRANDS -->
+<div class="section-title">브랜드 분석</div>
+
+<div class="brand-card">
+  <div class="brand-name">MONTBLANC 몽블랑</div>
+  <div class="brand-origin">1906 독일 함부르크 | 리치몽 그룹 (까르띠에, IWC)</div>
+  <div class="brand-desc">
+    만년필로 시작한 럭셔리 하우스. 이름은 유럽 최고봉 몽블랑(4,810m)에서 따왔고, 흰 별 로고 = 만년설.
+    "글을 쓰는 행위"를 럭셔리로 만든 브랜드. 가죽제품, 시계로 확장하며 남성 비즈니스 럭셔리의 대명사가 됨.
+    한국에서는 30~50대 "성공한 남자의 상징"으로 인지도 매우 높음.
+  </div>
+</div>
+
+<div class="brand-card">
+  <div class="brand-name">LOEWE 로에베</div>
+  <div class="brand-origin">1846 스페인 마드리드 | LVMH 그룹 (루이비통, 디올)</div>
+  <div class="brand-desc">
+    럭셔리 브랜드 중 가장 오래된 축 (에르메스 다음). 스페인 왕실 납품 가죽 공방에서 시작.
+    2013년 조나단 앤더슨이 합류하며 "장인정신 + 현대 아트"로 부활. 퍼즐백 대히트.
+    한국에서 최근 3~4년 폭발적 성장. "로에베 아는 사람 = 패션 좀 아는 사람" 이미지.
+    남성 가방은 아직 블루오션 — 차별화 최적.
+  </div>
+</div>
+
+<div class="brand-card">
+  <div class="brand-name">BALENCIAGA 발렌시아가</div>
+  <div class="brand-origin">1917 스페인 바스크 | 케어링 그룹 (구찌, 생로랑)</div>
+  <div class="brand-desc">
+    코코 샤넬이 "우리 중 유일한 진짜 쿠튀리에"라 칭찬한 전설적 하우스.
+    2015년 뎀나 바잘리아가 합류 후 스트릿+하이패션 경계를 부숨 (트리플S 어글리슈즈).
+    한국 2030 인지도 탑급이나 호불호 갈림. 아동 광고 논란 후 회복 중.
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="section-title">후보 제품 5선</div>
+
+<div class="product-card">
+  <div class="product-header">
+    <div class="product-name">1. 사토리얼 라지 백팩</div>
+    <div class="product-price">₩2,690,000</div>
+  </div>
+  <div class="product-line">MONTBLANC | 사토리얼 컬렉션 | 사피아노 가죽</div>
+  <div class="tags">
+    <span class="tag best">미팅 최적</span>
+    <span class="tag">클래식</span>
+    <span class="tag">정장 매칭</span>
+  </div>
+  <div class="pros-cons">
+    <div class="pros"><span>장점</span>
+      <li>깔끔한 사피아노 텍스처</li>
+      <li>정장에 가장 잘 어울림</li>
+      <li>몽블랑 별 로고 포인트</li>
+    </div>
+    <div class="cons"><span>단점</span>
+      <li>디자인이 무난해서 특별함 부족</li>
+      <li>사피아노는 스크래치엔 강하나 각짐</li>
+    </div>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-header">
+    <div class="product-name">2. 익스트림 3.0 라지 백팩</div>
+    <div class="product-price">₩2,690,000</div>
+  </div>
+  <div class="product-line">MONTBLANC | 익스트림 3.0 컬렉션 | 코팅 가죽</div>
+  <div class="tags">
+    <span class="tag best">실용성 최고</span>
+    <span class="tag best">내구성 최고</span>
+    <span class="tag">캐주얼+비즈니스</span>
+  </div>
+  <div class="pros-cons">
+    <div class="pros"><span>장점</span>
+      <li>코팅 가죽 — 스크래치/비에 강함</li>
+      <li>체크 패턴으로 밋밋하지 않음</li>
+      <li>일상+미팅 겸용 가장 적합</li>
+    </div>
+    <div class="cons"><span>단점</span>
+      <li>코팅 느낌이 가죽감 떨어뜨림</li>
+      <li>패턴 호불호 있을 수 있음</li>
+    </div>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-header">
+    <div class="product-name">3. 사토리얼 렉탱귤러 백팩</div>
+    <div class="product-price">₩2,770,000</div>
+  </div>
+  <div class="product-line">MONTBLANC | 사토리얼 컬렉션 | 사피아노 가죽</div>
+  <div class="tags">
+    <span class="tag">서류가방형</span>
+    <span class="tag best">포멀 최고</span>
+    <span class="tag">블랙/그레이</span>
+  </div>
+  <div class="pros-cons">
+    <div class="pros"><span>장점</span>
+      <li>서류가방+백팩 하이브리드</li>
+      <li>가장 프로페셔널한 실루엣</li>
+      <li>핸들 그립 — 손에 들고 다니기 좋음</li>
+    </div>
+    <div class="cons"><span>단점</span>
+      <li>각진 형태라 캐주얼에 어색</li>
+      <li>일상용으로는 딱딱한 느낌</li>
+    </div>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-header">
+    <div class="product-name">4. 밀리터리 백팩 소프트 그레인 카프스킨</div>
+    <div class="product-price">₩3,600,000</div>
+  </div>
+  <div class="product-line">LOEWE | 밀리터리 라인 | 소프트 그레인 카프스킨</div>
+  <div class="tags">
+    <span class="tag best">희소성 최고</span>
+    <span class="tag best">가죽 품질 최고</span>
+    <span class="tag">모던</span>
+  </div>
+  <div class="pros-cons">
+    <div class="pros"><span>장점</span>
+      <li>그레인 카프스킨 — 고급감+내구성</li>
+      <li>남성 로에베 백팩 자체가 희소</li>
+      <li>구조적 디자인이 정돈된 느낌</li>
+      <li>버클 디테일이 포인트</li>
+    </div>
+    <div class="cons"><span>단점</span>
+      <li>가장 비쌈 (360만)</li>
+      <li>로에베를 모르는 사람에겐 그냥 가방</li>
+    </div>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-header">
+    <div class="product-name">5. 남성 르 시티 백팩 블랙</div>
+    <div class="product-price">₩2,985,000</div>
+  </div>
+  <div class="product-line">BALENCIAGA | 르 시티 | 아레나 스토리코 램스킨</div>
+  <div class="tags">
+    <span class="tag">빈티지 무드</span>
+    <span class="tag">스트릿</span>
+    <span class="tag warn">내구성 주의</span>
+  </div>
+  <div class="pros-cons">
+    <div class="pros"><span>장점</span>
+      <li>구겨진 양가죽 빈티지 감성</li>
+      <li>발렌시아가 클래식 DNA (브라스+태슬)</li>
+      <li>캐주얼 일상에 가장 힙한 선택</li>
+    </div>
+    <div class="cons"><span>단점</span>
+      <li>램스킨 = 스크래치/마모에 약함</li>
+      <li>미팅용으로는 캐주얼한 인상</li>
+      <li>매일 쓰면 소모 빠름</li>
+    </div>
+  </div>
+</div>
+
+<!-- COMPARE -->
+<div class="section-title">한눈에 비교</div>
+
+<table class="compare-table">
+  <tr>
+    <th></th>
+    <th>사토리얼<br>라지</th>
+    <th>익스트림<br>3.0</th>
+    <th>사토리얼<br>렉탱귤러</th>
+    <th>로에베<br>밀리터리</th>
+    <th>발렌시아가<br>르시티</th>
+  </tr>
+  <tr>
+    <td style="color:#888">가격</td>
+    <td>269만</td><td>269만</td><td>277만</td><td>360만</td><td>298만</td>
+  </tr>
+  <tr>
+    <td style="color:#888">일상</td>
+    <td>★★★</td><td class="star">★★★★★</td><td>★★</td><td class="star">★★★★</td><td class="star">★★★★★</td>
+  </tr>
+  <tr>
+    <td style="color:#888">미팅</td>
+    <td class="star">★★★★★</td><td>★★★★</td><td class="star">★★★★★</td><td>★★★★</td><td>★★</td>
+  </tr>
+  <tr>
+    <td style="color:#888">내구성</td>
+    <td>★★★</td><td class="star">★★★★★</td><td>★★★</td><td class="star">★★★★</td><td>★★</td>
+  </tr>
+  <tr>
+    <td style="color:#888">희소성</td>
+    <td>★★</td><td>★★</td><td>★★★</td><td class="star">★★★★★</td><td>★★★</td>
+  </tr>
+  <tr>
+    <td style="color:#888">겸용 점수</td>
+    <td>★★★</td><td class="star">★★★★★</td><td>★★★</td><td class="star">★★★★</td><td>★★★</td>
+  </tr>
+</table>
+
+<!-- VERDICT -->
+<div class="verdict">
+  <h3>미카사의 최종 의견</h3>
+  <p class="pick">1순위: 로에베 밀리터리 백팩 (360만)</p>
+  <p>희소성+고급감+내구성 다 잡음. 남성 로에베 백팩 자체가 흔치 않아서 미팅에서 차별화됨. 그레인 카프스킨이라 거칠게 써도 오래감. 제일 비싸지만 제일 오래 쓸 가방.</p>
+  <br>
+  <p class="pick">2순위: 몽블랑 익스트림 3.0 (269만)</p>
+  <p>가격 대비 가장 실용적. 코팅 가죽이라 비, 스크래치 걱정 없이 매일 들 수 있음. 일상+미팅 겸용 점수 최고. "일단 하나 사서 매일 쓸 가방"이면 이게 답.</p>
+  <br>
+  <p style="color:#888; font-size:13px;">오프라인에서 실물 볼 때 체크 포인트: 등판 쿠션감, 노트북 수납(16인치 되는지), 지퍼 부드러움, 무게감, 어깨끈 두께</p>
+</div>
+
+<div class="footer">미카사 | 2026.04.27</div>
+
+</body>
+</html>
