@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1080px;
+  height: 1920px;
+  background: linear-gradient(165deg, #f5f0eb 0%, #ede4db 30%, #d8c8b8 60%, #8b7ba8 85%, #6b5b8a 100%);
+  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative circles */
+.circle1 {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(139, 123, 168, 0.15);
+}
+.circle2 {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 1px solid rgba(139, 123, 168, 0.12);
+}
+.circle3 {
+  position: absolute;
+  bottom: -150px;
+  left: -150px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 1px solid rgba(139, 123, 168, 0.1);
+}
+.circle4 {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid rgba(139, 123, 168, 0.08);
+}
+
+/* Swirl pattern overlay */
+.swirl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  opacity: 0.04;
+}
+.swirl-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #6b5b8a;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  color: rgba(107, 91, 138, 0.25);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgba(107, 91, 138, 0.2);
+  letter-spacing: 4px;
+}
+
+.line {
+  width: 60px;
+  height: 1px;
+  background: rgba(107, 91, 138, 0.15);
+}
+
+.subtitle {
+  font-size: 20px;
+  color: rgba(107, 91, 138, 0.15);
+  letter-spacing: 6px;
+}
+
+/* Subtle dot pattern */
+.dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(139, 123, 168, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+</style>
+</head>
+<body>
+  <div class="dots"></div>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+  <div class="circle3"></div>
+  <div class="circle4"></div>
+  
+  <!-- Swirl rings -->
+  <div class="swirl">
+    <div class="swirl-ring" style="width:800px;height:800px;top:0;left:0;"></div>
+    <div class="swirl-ring" style="width:650px;height:650px;top:75px;left:75px;"></div>
+    <div class="swirl-ring" style="width:500px;height:500px;top:150px;left:150px;"></div>
+    <div class="swirl-ring" style="width:350px;height:350px;top:225px;left:225px;"></div>
+    <div class="swirl-ring" style="width:200px;height:200px;top:300px;left:300px;"></div>
+  </div>
+
+  <div class="content">
+    <div class="logo">OCMD</div>
+    <div class="line"></div>
+    <div class="title">현장강의</div>
+    <div class="subtitle">공지방</div>
+  </div>
+</body>
+</html>
